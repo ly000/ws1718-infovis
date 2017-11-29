@@ -1,43 +1,50 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 <html>
 <head>
-    <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
-    <div id="viz"></div>
-    <script type="text/javascript">
+    <div id="map"></div>
+    <script>
 
-    var sampleSVG = d3.select("#viz")
-        .append("svg")
-        .attr("width", 100)
-        .attr("height", 100);    
+    var projection = d3.geoMercator()
+        .scale(110000)
+        .center ([11.61], [48.160]);
 
-    sampleSVG.append("circle")
-        .style("stroke", "gray")
-        .style("fill", "white")
-        .attr("r", 40)
-        .attr("cx", 50)
-        .attr("cy", 50)
-        .on("mouseover", function(){d3.select(this).style("fill", "aliceblue");})
-        .on("mouseout", function(){d3.select(this).style("fill", "white");})
-        .on("mousedown", animateFirstStep);
+    var path = d3.geoPath().projection(projection);
 
-function animateFirstStep(){
-    d3.select(this)
-      .transition()            
-        .delay(0)            
-        .duration(1000)
-        .attr("r", 10)
-        .each("end", animateSecondStep);
-};
+    var svg = d3.select("#map").append("svg")
+        .attr("width", 800)
+        .attr("height", 600)
+        .append("g");
 
-function animateSecondStep(){
-    d3.select(this)
-      .transition()
-        .duration(1000)
-        .attr("r", 40);
-};
-    
+    d3.json("munich.geojson", function(error, mapData) {
+        console.log(mapData);
+
+        var features = mapData.features;
+
+        svg.selectAll("path")
+            .data(features).enter()
+            .append("path")
+            .attr("class", "district")
+            .attr("data-name", function(munich_district) {
+                return munich_district.properties.name;
+            })
+            .attr("data-munich_r_1", function (munich_district) {
+                return munich_district.properties.munich_r_1;
+            })
+            .attr("data-munich_r_2", function (munich_district) {
+                return munich_district.properties.munich_r_2;
+            })
+            .attr("id", function (munich_district) {
+                return munich_district.properties.cartodb_id;
+            })
+            .attr("title", function (munich_district) {
+                return munich_district.properties.name;
+            })
+            .attr("d", path);
+    })    
     </script>
 </body>
 </html>
