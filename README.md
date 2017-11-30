@@ -16,8 +16,22 @@
 4. Follow the deadlines of the milestones
 
 ### Technical setup
+
 D3.JS
+
 Github
+
+Setting up useful enviroments in general
+
 Done
 
 ### Mockups
+Simple Map of Munich ready
+
+### Documentation
+#### Difficulties
+Getting started with HTML, JS, etc (Unknown frameworks);
+Stupidity
+
+####
+
