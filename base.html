@@ -57,8 +57,20 @@
           .attr("d", path)
           .style('fill', 'orange')
           .style('stroke', 'black')
-          .style('stroke-width', 1);
+          .style('stroke-width', 1)
+          .on('mouseover', mouseover)
+          .on('mouseout', mouseout);
       });
+
+      function mouseover(d){
+      // Highlight hovered province
+        d3.select(this).style('fill', 'black');
+      }
+
+      function mouseout(d){
+      // Highlight hovered province
+        d3.select(this).style('fill', 'orange');
+      }
 
       console.log('debug');
       var svgarr = $('path');
