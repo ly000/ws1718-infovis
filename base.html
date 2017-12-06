@@ -10,9 +10,18 @@
 </head>
 
 <body> 
+  <div id="test"> </div>
   <div id="wrapper"> 
   <div id="map"> </div>
   <div id="sliderDiv">
+      <form>
+          <fieldset>
+            <legend>Static Legend (per district)</legend>
+            Intensity of Color: Percentage of foreigners<br>
+            Number of Stickmen: Average children per household<br>
+            Placeholder:        Average rent in sqm
+          </fieldset>
+        </form>
     <label>
       <input type="range" min="1" max="3" value="1" class="slider" id="sliderEle">
     </label>
@@ -24,21 +33,18 @@
       <input type="checkbox" name="zutat" value="salami">
          Kinder Gelb
     </label>
-  <form>
-    </div>
-
   </div>
- 
+  <div id="sideRight">
+    <b> Here is some flavortext</b>
+  </div>
+</div>
   
-    <fieldset>
-      <legend>Static Legend (per district)</legend>
-      Intensity of Color: Percentage of foreigners<br>
-      Number of Stickmen: Average children per household<br>
-      Placeholder:        Average rent in sqm
-    </fieldset>
-  </form>
   <script type="text/javascript">
     $(document).ready(function(){
+
+      var width = 800
+      var height = 600
+
       var projection = d3.geoMercator()
         .scale(110000)
         .center([11.61, 48.160]);
@@ -46,8 +52,8 @@
       var path = d3.geoPath().projection(projection);
 
       var svg = d3.select('#map').append('svg')
-        .attr("width", 800)
-        .attr("height", 600)
+        .attr("width", width)
+        .attr("height", height)
         .append("g");
 
       d3.json("munich.geojson", function(error, mapData) {
@@ -78,7 +84,8 @@
           .style('stroke', 'black')
           .style('stroke-width', 1)
           .on('mouseover', mouseover)
-          .on('mouseout', mouseout);
+          .on('mouseout', mouseout)
+          .on('click', click, svgClicked);
       });
 
       function mouseover(d){
@@ -87,7 +94,7 @@
         $('#4').css('fill', 'black');
         $('#5').append("<div class='overtext'> test </div>");
 
-        console.log(this.id);
+        //console.log(this.id);
       }
 
       function mouseout(d){
@@ -95,15 +102,28 @@
         d3.select(this).style('fill', 'orange');
       }
 
-      console.log('debug');
-      var svgarr = $('.district');
-      console.log('svgarr' + svgarr);
-      $.each(svgarr, function(data) {
-        var tmpData = data;
-        var id = data.attr('id');
-        console.log(id);
-        data.append('text', id);
-      });
+      function click(d){
+        //console.info(this.dataset.name)
+      // Highlight hovered province
+        console.log(this);
+        $('#sideRight').empty();
+        $('#sideRight').html(this.id + " " + this.getAttribute('title'));
+
+        var mouse = d3.mouse(this);
+        console.log(mouse);
+        $('#test').html("<div id='test'>" + this.getAttribute('title') + "</div>");
+        //var text = 
+
+        //$('body').append(text);
+        $('#test').css({'top':mouse[1],'left':mouse[0]}).fadeIn('slow');
+      }
+
+      function svgClicked(d){
+        console.log('am here');
+        var mouseX = e.pageX; 
+        var mouseY = e.pageY;
+        
+      }
     });
 
 //for Time
