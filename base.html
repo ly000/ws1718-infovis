@@ -9,9 +9,9 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body> 
+<body>
   <div id="test"> </div>
-  <div id="wrapper"> 
+  <div id="wrapper">
   <div id="map"> </div>
   <div id="sliderDiv">
       <form>
@@ -38,7 +38,7 @@
     <b> Here is some flavortext</b>
   </div>
 </div>
-  
+
   <script type="text/javascript">
     $(document).ready(function(){
 
@@ -80,13 +80,23 @@
             return munich_district.properties.name;
           })
           .attr("d", path)
-          .style('fill', 'orange')
+          .style('fill', fillDistrict)
           .style('stroke', 'black')
           .style('stroke-width', 1)
           .on('mouseover', mouseover)
           .on('mouseout', mouseout)
           .on('click', click, svgClicked);
       });
+
+      var returnval;
+      function fillDistrict() {
+        //var returnval;
+        returnval = d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv", function(data) {
+          returnval = 'orange';
+
+          console.log("inner returnvalue" + returnval);
+        });
+      }
 
       function mouseover(d){
       // Highlight hovered province
@@ -112,7 +122,7 @@
         var mouse = d3.mouse(this);
         console.log(mouse);
         $('#test').html("<div id='test'>" + this.getAttribute('title') + "</div>");
-        //var text = 
+        //var text =
 
         //$('body').append(text);
         $('#test').css({'top':mouse[1],'left':mouse[0]}).fadeIn('slow');
@@ -120,9 +130,9 @@
 
       function svgClicked(d){
         console.log('am here');
-        var mouseX = e.pageX; 
+        var mouseX = e.pageX;
         var mouseY = e.pageY;
-        
+
       }
     });
 
@@ -138,7 +148,7 @@
 </script>
 
 <div id="slidecontainer">
-  
+
 </div>
 </body>
 
