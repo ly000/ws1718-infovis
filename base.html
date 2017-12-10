@@ -78,7 +78,7 @@
           }));
       });
 
-      d3.json("munich.geojson", function(error, mapData) {
+      d3.json("mucbezirke.geojson", function(error, mapData) {
         var features = mapData.features;
 
         svg.selectAll("path")
@@ -88,14 +88,8 @@
           .attr("data-name", function(munich_district) {
             return munich_district.properties.name;
           })
-          .attr("data-munich_r_1", function(munich_district) {
-            return munich_district.properties.munich_r_1;
-          })
-          .attr("data-munich_r_2", function(munich_district) {
-            return munich_district.properties.munich_r_2;
-          })
           .attr("id", function(munich_district) {
-            return munich_district.properties.cartodb_id;
+            return munich_district.properties.nr;
           })
           .attr("title", function(munich_district) {
             return munich_district.properties.name;
@@ -112,7 +106,7 @@
             var value=-1;
             console.log('datanummer' + data.properties.cartodb_id)
             record.forEach(function(d){
-                if(data.properties.cartodb_id == d.key){
+                if(data.properties.nr == d.key){
                     value = d.value;
                     return;
                 }
