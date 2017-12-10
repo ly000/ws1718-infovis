@@ -1,0 +1,22 @@
+Infoviz
+
+UPDATE: we found a new correct geojson.
+
+a) GitHub: https://github.com/ly000/ws1718-infovis.git
+b) 
+- Color on Hover Changes, Click, css
+- Districts Clickable, but not correct ID is shown (but name)
+- Some sliders and boxes, no effects yet
+- Heatmap from Real Data already implemented, but not correctly, as
+GEOJSON-Map is not correct (the one which can be downloaded from the tutorial)
+
+
+Horizontal Prototype:
+So the basic visualization is standing, however, the faulty geojson contains 28
+districts and in reality there are only 25. -> 3 are empty in our current layout. Base Map
+shows the distribution of foreign people. 
+
+c)
+1. Heatmaps for other Data combine it with Buttons/sliders
+2. Sidebox view: For comparison
+3. Adjust colors
