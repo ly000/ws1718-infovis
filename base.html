@@ -43,6 +43,8 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
+      var dataset = d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv"); 
+      console.log(dataset[0]);
 
       var width = 800
       var height = 600
@@ -133,11 +135,16 @@
         });
       }
 
+      function colorAll() {
+
+        return 'blue';
+      }
+
       function mouseover(d){
       // Highlight hovered province
         d3.select(this).style('fill', 'black');
-        $('#4').css('fill', 'black');
-        $('#5').append("<div class='overtext'> test </div>");
+        //$('#4').css('fill', 'black');
+        //$('#5').append("<div class='overtext'> test </div>");
 
         //console.log(this.id);
       }
@@ -150,7 +157,7 @@
       function click(d){
         //console.info(this.dataset.name)
       // Highlight hovered province
-        console.log(this);
+        //d3.select(this).style('fill', 'black');
         $('#sideRight').empty();
         $('#sideRight').html(this.id + " " + this.getAttribute('title'));
 

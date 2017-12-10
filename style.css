@@ -1,0 +1,23 @@
+#wrapper {
+    width: 1300px;
+    border: 1px solid black;
+}
+#map {
+    width: 700px;
+    border: 1px solid red;
+    float:left;
+}
+#slider {
+    border: 1px solid green;
+    float:top, right; 
+}
+
+#sideRight {
+    border: 1px solid blue;
+    float:bottom, right; 
+}
+
+#test {
+    border: 1px solid orange;
+    position: absolute; 
+}
