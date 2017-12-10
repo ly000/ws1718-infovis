@@ -6,6 +6,8 @@
   <title>Visualization Munich</title>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.8.0/d3-legend.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
@@ -56,6 +58,24 @@
         .attr("height", height)
         .append("g");
 
+      var color = d3.scaleLinear().range(["blue", "red"]);
+      var showValue= "INDIKATOR_WERT";
+      var record=[];
+
+      function addRecord(d){
+          d[showValue]=+d[showValue];
+          var obj = {key: d.NUMMER, value: d[showValue]};
+          record.push(obj);
+          console.log(d.NUMMER + ' has var '  + d[showValue]);
+          return d;
+      }
+
+      d3.csv("data/preprocessing/test.csv", addRecord, function(error,data){
+          color.domain(d3.extent(data, function(d){
+              return d[showValue];
+          }));
+      });
+
       d3.json("munich.geojson", function(error, mapData) {
         console.log(mapData);
         var features = mapData.features;
@@ -80,12 +100,27 @@
             return munich_district.properties.name;
           })
           .attr("d", path)
-          .style('fill', fillDistrict)
+          .style('fill', getColor)
           .style('stroke', 'black')
           .style('stroke-width', 1)
           .on('mouseover', mouseover)
           .on('mouseout', mouseout)
           .on('click', click, svgClicked);
+
+          function getColor(data){
+            var value=-1;
+            record.forEach(function(d){
+                if(data.NUMMER == d.key){
+                    value = d.value;
+                    return;
+                }
+            });
+            if(value==-1){
+                return "none";
+            }
+            return color(value);
+        }
+
       });
 
       var returnval;
