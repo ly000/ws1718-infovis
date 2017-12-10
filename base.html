@@ -43,7 +43,7 @@
 
   <script type="text/javascript">
     $(document).ready(function(){
-      var dataset = d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv"); 
+      var dataset = d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv");
       console.log(dataset[0]);
 
       var width = 800
@@ -79,7 +79,6 @@
       });
 
       d3.json("munich.geojson", function(error, mapData) {
-        console.log(mapData);
         var features = mapData.features;
 
         svg.selectAll("path")
@@ -111,8 +110,9 @@
 
           function getColor(data){
             var value=-1;
+            console.log('datanummer' + data.properties.cartodb_id)
             record.forEach(function(d){
-                if(data.NUMMER == d.key){
+                if(data.properties.cartodb_id == d.key){
                     value = d.value;
                     return;
                 }
