@@ -107,7 +107,7 @@
           .style('stroke-width', 1)
           .on('mouseover', mouseover)
           .on('mouseout', mouseout)
-          .on('click', click, svgClicked);
+          .on('click', click);
 
           function getColor(data){
             var value=-1;
@@ -170,12 +170,6 @@
         $('#test').css({'top':mouse[1],'left':mouse[0]}).fadeIn('slow');
       }
 
-      function svgClicked(d){
-        console.log('am here');
-        var mouseX = e.pageX;
-        var mouseY = e.pageY;
-
-      }
     });
 
 //for Time
