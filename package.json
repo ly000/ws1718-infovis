@@ -1,0 +1,22 @@
+{
+  "name": "ws1718-infovis",
+  "version": "1.0.0",
+  "description": "1. Visualize map of munich\r 2. Features\r    1. Heatmap: Distribution in districts (Toggles between *a*-*d*)\r       1. Percentage of foreign children in primary schools\r       2. (Rent in square meters per district)\r       3. Percentage of foreigner per district\r       4. (Percentage of unemployed) \r    2. Visualize quota of children per household\r    3. (Compare Rent and Unemployment (See if theres a correlation))\r 3. Visualization via Heatmap (Togglable), Trend Graphs, Quotavisualization via Stickman(children per household)\r 4. Follow the deadlines of the milestones",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ly000/ws1718-infovis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ly000/ws1718-infovis/issues"
+  },
+  "homepage": "https://github.com/ly000/ws1718-infovis#readme",
+  "dependencies": {
+    "d3-tip": "^0.7.1"
+  }
+}

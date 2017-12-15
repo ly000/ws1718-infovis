@@ -8,46 +8,50 @@
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.8.0/d3-legend.min.js"></script>
+  <script type="text/javascript" src="./node_modules/d3-tip/index.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="http://rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
 </head>
 
 <body>
   <div id="test"> </div>
   <div id="wrapper">
-  <div id="map"> </div>
-  <div id="sliderDiv">
+    <div id="map"> </div>
+    <div id="sliderDiv">
       <form>
-          <fieldset>
-            <legend>Static Legend (per district)</legend>
-            Intensity of Color: Percentage of foreigners<br>
-            Number of Stickmen: Average children per household<br>
-            Placeholder:        Average rent in sqm
-          </fieldset>
-        </form>
-    <label>
+        <fieldset>
+          <legend>Static Legend (per district)</legend>
+          Intensity of Color: Percentage of foreigners<br> Number of Stickmen: Average children per household<br> Placeholder: Average rent in sqm
+        </fieldset>
+      </form>
+      <label>
       <input type="range" min="1" max="3" value="1" class="slider" id="sliderEle">
     </label>
-    <label>
+      <label>
       <input type="checkbox" name="zutat" value="salami">
     Kinder Schwarz
     </label>
-    <label>
+      <label>
       <input type="checkbox" name="zutat" value="salami">
          Kinder Gelb
     </label>
+    </div>
+    <div id="sideRight">
+      <b> Here is some flavortext</b>
+    </div>
   </div>
-  <div id="sideRight">
-    <b> Here is some flavortext</b>
-  </div>
-</div>
 
   <script type="text/javascript">
-    $(document).ready(function(){
-      var dataset = d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv");
-      console.log(dataset[0]);
+    $(document).ready(function() {
 
-      var width = 800
-      var height = 600
+      //Initializing needed data
+      var dataset = d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv");
+      var color = d3.scaleLinear().range(["blue", "red"]);
+      var showValue = "INDIKATOR_WERT";
+      var record = [];
+
+      var width = 800;
+      var height = 600;
 
       var projection = d3.geoMercator()
         .scale(110000)
@@ -60,24 +64,25 @@
         .attr("height", height)
         .append("g");
 
-      var color = d3.scaleLinear().range(["blue", "red"]);
-      var showValue= "INDIKATOR_WERT";
-      var record=[];
-
-      function addRecord(d){
-          d[showValue]=+d[showValue];
-          var obj = {key: d.NUMMER, value: d[showValue]};
-          record.push(obj);
-          console.log(d.NUMMER + ' has var '  + d[showValue]);
-          return d;
+      //Prepare datastructures
+      function addRecord(d) {
+        d[showValue] = +d[showValue];
+        var obj = {
+          key: d.NUMMER,
+          value: d[showValue]
+        };
+        record.push(obj);
+        //console.log(d.NUMMER + ' has var '  + d[showValue]);
+        return d;
       }
 
-      d3.csv("data/preprocessing/test.csv", addRecord, function(error,data){
-          color.domain(d3.extent(data, function(d){
-              return d[showValue];
-          }));
+      d3.csv("data/preprocessing/test.csv", addRecord, function(error, data) {
+        color.domain(d3.extent(data, function(d) {
+          return d[showValue];
+        }));
       });
 
+      //Draw map + bind events
       d3.json("mucbezirke.geojson", function(error, mapData) {
         var features = mapData.features;
 
@@ -98,44 +103,36 @@
           .style('fill', getColor)
           .style('stroke', 'black')
           .style('stroke-width', 1)
-          .on('mouseover', mouseover)
-          .on('mouseout', mouseout)
+          .on('mouseover', tip.show)
+          .on('mouseout', tip.hide)
           .on('click', click);
-
-          function getColor(data){
-            var value=-1;
-            console.log('datanummer' + data.properties.cartodb_id)
-            record.forEach(function(d){
-                if(data.properties.nr == d.key){
-                    value = d.value;
-                    return;
-                }
-            });
-            if(value==-1){
-                return "none";
-            }
-            return color(value);
-        }
-
       });
 
-      var returnval;
-      function fillDistrict() {
-        //var returnval;
-        returnval = d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv", function(data) {
-          returnval = 'orange';
+      //Bind tooltip to map
+      var tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
+        console.log(d.properties.name);
+        return d.properties.name;
+      });
+      svg.call(tip);
 
-          console.log("inner returnvalue" + returnval);
+      //Helper functions
+      function getColor(data) {
+        var value = -1;
+        //console.log('datanummer' + data.properties.cartodb_id)
+        record.forEach(function(d) {
+          if (data.properties.nr == d.key) {
+            value = d.value;
+            return;
+          }
         });
+        if (value == -1) {
+          return "none";
+        }
+        return color(value);
       }
 
-      function colorAll() {
-
-        return 'blue';
-      }
-
-      function mouseover(d){
-      // Highlight hovered province
+      function mouseover(d) {
+        // Highlight hovered province
         d3.select(this).style('fill', 'black');
         //$('#4').css('fill', 'black');
         //$('#5').append("<div class='overtext'> test </div>");
@@ -143,14 +140,15 @@
         //console.log(this.id);
       }
 
-      function mouseout(d){
-      // Highlight hovered province
-        d3.select(this).style('fill', 'orange');
+      function mouseout(d) {
+        // Highlight hovered province
+        d3.select(this).style('fill', 'black');
+        console.log(d3.select(this));
       }
 
-      function click(d){
+      function click(d) {
         //console.info(this.dataset.name)
-      // Highlight hovered province
+        // Highlight hovered province
         //d3.select(this).style('fill', 'black');
         $('#sideRight').empty();
         $('#sideRight').html(this.id + " " + this.getAttribute('title'));
@@ -161,25 +159,27 @@
         //var text =
 
         //$('body').append(text);
-        $('#test').css({'top':mouse[1],'left':mouse[0]}).fadeIn('slow');
+        $('#test').css({
+          'top': mouse[1],
+          'left': mouse[0]
+        }).fadeIn('slow');
       }
 
     });
 
-//for Time
- $( "#sliderEle" ).on( "change", function( event, ui ) {
-   Console.log('u slided');
- } );
+    //for Time
+    $("#sliderEle").on("change", function(event, ui) {
+      Console.log('u slided');
+    });
 
- function nameFn(d){
-  return d && d.properties ? d.properties.NOMBRE_DPT : null;
-}
+    function nameFn(d) {
+      return d && d.properties ? d.properties.NOMBRE_DPT : null;
+    }
+  </script>
 
-</script>
+  <div id="slidecontainer">
 
-<div id="slidecontainer">
-
-</div>
+  </div>
 </body>
 
 </html>
