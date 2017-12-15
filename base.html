@@ -73,14 +73,13 @@
 
         // set the dimensions and margins of the graph
         var margin = {top: 20, right: 20, bottom: 30, left: 50},
-            width = 960 - margin.left - margin.right,
-            height = 500 - margin.top - margin.bottom;
+            width = 540 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
 
-// parse the date / time
-        var parseTime = d3.timeParse("%d-%b-%y");
+
 
 // set the ranges
-        var x = d3.scaleTime().range([0, width]);
+        var x = d3.scaleLinear().range([0, width]);
         var y = d3.scaleLinear().range([height, 0]);
 
 // define the area
@@ -97,9 +96,10 @@
 // append the svg obgect to the body of the page
 // appends a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
+
         var svg2 = d3.select("#graphright").append("svg")
-            .attr("width", 450 + margin.left + margin.right)
-            .attr("height", 350 + margin.top + margin.bottom)
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
             .append("g")
             .attr("transform",
                 "translate(" + margin.left + "," + margin.top + ")");
@@ -108,22 +108,16 @@
         d3.csv("data.csv", function(error, data) {
             if (error) throw error;
 
-            // format the data
-            data.forEach(function (d) {
-                d.date = parseTime(d.date);
-                d.close = +d.close;
-            });
-
             // scale the range of the data
             x.domain(d3.extent(data, function (d) {
                 return d.date;
             }));
-            y.domain([0, d3.max(data, function (d) {
+            y.domain([1, d3.max(data, function (d) {
                 return d.close;
             })]);
 
             // add the area
-            svg2.append("path")
+            svg2.append("graph")
                 .data([data])
                 .attr("width", 300)
                 .attr("height", 300)
@@ -136,14 +130,20 @@
                 .attr("class", "line")
                 .attr("d", valueline);
 
-            // add the X Axis
+            // Add the X Axis
             svg2.append("g")
-                .attr("transform", "translate(0," + 350 + ")")
-                .call(d3.axisBottom(x));
+                .attr("class", "axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x).ticks(10))
+                .selectAll("text")
+                .style("text-anchor", "end")
+                .attr("dx", "-.8em")
+                .attr("dy", ".15em")
+                //.attr("transform", "rotate(-65)");
 
-            // add the Y Axis
+            // Add the Y Axis
             svg2.append("g")
-                //.attr("transform", "translate(0," + 400 + ")")
+                .attr("class", "axis")
                 .call(d3.axisLeft(y));
 
         });
