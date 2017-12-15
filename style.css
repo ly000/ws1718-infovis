@@ -9,15 +9,21 @@
 }
 #slider {
     border: 1px solid green;
-    float:top, right; 
+    float:right;
 }
 
 #sideRight {
     border: 1px solid blue;
-    float:bottom, right; 
+    float:left;
 }
 
 #test {
     border: 1px solid orange;
     position: absolute; 
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
 }
