@@ -201,19 +201,18 @@
             width = 540 - margin.left - margin.right,
             height = 400 - margin.top - margin.bottom;
         // set the ranges
-        var x = d3.scaleLinear().range([0, width]);
+        var x = d3.scaleTime().range([0, width]);
         var y = d3.scaleLinear().range([height, 0]);
 
         // define the area
         var area = d3.area()
-            .x(function(d) { return x(d.district); })
-            .y0(height)
-            .y1(function(d) { return y(d.percent); });
+            .x(function(d) { return x(d.JAHR.toString()); })
+            .y(function(d) { return y(d.INDIKATOR_WERT); });
 
         // define the line
         var valueline = d3.line()
-            .x(function(d) { return x(d.district); })
-            .y(function(d) { return y(d.percent); });
+            .x(function(d) { return x(d.JAHR.toString()); })
+            .y(function(d) { return y(d.INDIKATOR_WERT); });
 
         // append the svg obgect to the body of the page
         // appends a 'group' element to 'svg'
@@ -232,10 +231,10 @@
 
             // scale the range of the data
             x.domain(d3.extent(data, function (d) {
-                return d.district;
+                return d.JAHR.toString();
             }));
             y.domain([0, d3.max(data, function (d) {
-                return d.percent;
+                return d.INDIKATOR_WERT;
             })]);
 
             // add the area
@@ -254,18 +253,18 @@
 
             // Add the X Axis
             svg2.append("g")
-                .attr("class", "axis")
+                .attr("class", "x axis")
                 .attr("transform", "translate(0," + height + ")")
                 .call(d3.axisBottom(x))
-                .selectAll("text")
+                //.selectAll("text")
                 .style("text-anchor", "end")
-                .attr("dx", "-.8em")
-                .attr("dy", ".15em")
+                //.attr("dx", "-.8em")
+                //.attr("dy", ".15em")
             //.attr("transform", "rotate(-65)");
 
             // Add the Y Axis
             svg2.append("g")
-                .attr("class", "axis")
+                .attr("class", "y axis")
                 .call(d3.axisLeft(y));
 
         });
@@ -276,29 +275,35 @@
             var string = $('#textR').prop('outerHTML');
             var id = string.substr(14, 2).replace(/\s/g,''); // ID of selected District
 
-            var erg = [];
+            var years = [];
+            var values = [];
             // Get the data again
-            d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv", function(error, data) {
+            d3.csv("data/preprocessing/primaryschool_ds.csv", function(error, data) {
 
                 data.forEach(function(d) {
-
                     // Array with Data and Years
-                    if(d.NUMMER == id && d.INDIKATOR_AUSPRAEGUNG != 'deutsch') {
-                        d.NUMMER = +d.NUMMER;
-                        var district = [d.NUMMER, d.JAHR];
-                        erg.push(district);
-                        console.log(d.NUMMER + " added to erg with year " + d.JAHR);
+                    if(d.NUMMER == id) {
+                        years.push(d.JAHR.toString());
+                        values.push(d.INDIKATOR_WERT)
+                        console.log(d.INDIKATOR_WERT + ' was added for year ' + d.JAHR)
                     }
                 });
+                // define the line
 
-                console.log(erg[0] + " " + erg[1] );
+                valueline = d3.line()
+                    .x(function(d) { return x(years); })
+                    .y(function(d) { return y(values); });
 
                 // Scale the range of the data again
-                x.domain(d3.extent(data, function(d) { return erg[1]; }));
-                y.domain([0, d3.max(data, function(d) { return erg[0]; })]);
+                x.domain(d3.extent(data, function (d) {
+                    return years.length;
+                }));
+                y.domain([0, d3.max(data, function (d) {
+                    return values.length;
+                })]);
 
                 // Select the section we want to apply our changes to
-                var svg2 = d3.select("body").transition();
+                var svg2 = d3.select("#graphright").transition();
 
                 // Make the changes
                 svg2.select(".line")   // change the line

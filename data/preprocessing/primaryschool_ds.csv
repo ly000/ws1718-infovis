@@ -1,3 +1,4 @@
+NUMMER,INDIKATOR_GRUPPE,INDIKATOR_BEZEICHNUNG,INDIKATOR_AUSPRAEGUNG,INDIKATOR_WERT,BASISWERT_1,BASISWERT_2,NAME_BASISWERT1,NAME_BASISWERT2,JAHR,GLIEDERUNG,NAME
 1,Grundschüler_innen,Nationalität,ausländisch,14.9,47,315,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,01 Altstadt - Lehel
 1,Grundschüler_innen,Nationalität,ausländisch,16,52,325,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,01 Altstadt - Lehel
 1,Grundschüler_innen,Nationalität,ausländisch,21.4,74,346,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,01 Altstadt - Lehel
@@ -206,4 +207,3 @@
 #100,Grundschüler_innen,Nationalität,ausländisch,16.7,6258,37478,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Gesamtstadt,Stadt München
 #100,Grundschüler_innen,Nationalität,ausländisch,16.2,6207,38287,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Gesamtstadt,Stadt München
 #100,Grundschüler_innen,Nationalität,ausländisch,15.9,6316,39700,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Gesamtstadt,Stadt München
-NUMMER,INDIKATOR_GRUPPE,INDIKATOR_BEZEICHNUNG,INDIKATOR_AUSPRAEGUNG,INDIKATOR_WERT,BASISWERT_1,BASISWERT_2,NAME_BASISWERT1,NAME_BASISWERT2,JAHR,GLIEDERUNG,NAME
