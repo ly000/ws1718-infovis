@@ -1,209 +1,209 @@
-NUMMER,INDIKATOR_GRUPPE,INDIKATOR_BEZEICHNUNG,INDIKATOR_AUSPRAEGUNG,INDIKATOR_WERT,BASISWERT_1,BASISWERT_2,NAME_BASISWERT1,NAME_BASISWERT2,JAHR,GLIEDERUNG,NAME
-#100,Grundschüler_innen,Nationalität,ausländisch,17.3,6332,36593,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Gesamtstadt,Stadt München
-#100,Grundschüler_innen,Nationalität,ausländisch,18.7,6745,36007,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Gesamtstadt,Stadt München
-#100,Grundschüler_innen,Nationalität,ausländisch,16.2,6207,38287,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Gesamtstadt,Stadt München
-#100,Grundschüler_innen,Nationalität,ausländisch,20.7,7425,35852,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Gesamtstadt,Stadt München
-#100,Grundschüler_innen,Nationalität,ausländisch,22.9,8239,36019,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Gesamtstadt,Stadt München
-#100,Grundschüler_innen,Nationalität,ausländisch,17.7,6360,36009,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Gesamtstadt,Stadt München
-#100,Grundschüler_innen,Nationalität,ausländisch,15.9,6316,39700,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Gesamtstadt,Stadt München
-#100,Grundschüler_innen,Nationalität,ausländisch,16.7,6258,37478,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Gesamtstadt,Stadt München
+1,Grundschüler_innen,Nationalität,ausländisch,14.9,47,315,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,01 Altstadt - Lehel
+1,Grundschüler_innen,Nationalität,ausländisch,16,52,325,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,01 Altstadt - Lehel
+1,Grundschüler_innen,Nationalität,ausländisch,21.4,74,346,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,01 Altstadt - Lehel
+1,Grundschüler_innen,Nationalität,ausländisch,20.5,69,336,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,01 Altstadt - Lehel
 1,Grundschüler_innen,Nationalität,ausländisch,20.7,79,381,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,01 Altstadt - Lehel
 1,Grundschüler_innen,Nationalität,ausländisch,18.5,75,405,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,01 Altstadt - Lehel
-1,Grundschüler_innen,Nationalität,ausländisch,19.6,83,424,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,01 Altstadt - Lehel
-1,Grundschüler_innen,Nationalität,ausländisch,21.4,74,346,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,01 Altstadt - Lehel
 1,Grundschüler_innen,Nationalität,ausländisch,18.3,73,399,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,01 Altstadt - Lehel
-1,Grundschüler_innen,Nationalität,ausländisch,14.9,47,315,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,01 Altstadt - Lehel
-1,Grundschüler_innen,Nationalität,ausländisch,16.0,52,325,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,01 Altstadt - Lehel
-1,Grundschüler_innen,Nationalität,ausländisch,20.5,69,336,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,01 Altstadt - Lehel
-10,Grundschüler_innen,Nationalität,ausländisch,17.4,252,1445,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,10 Moosach
-10,Grundschüler_innen,Nationalität,ausländisch,19.1,269,1409,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,10 Moosach
-10,Grundschüler_innen,Nationalität,ausländisch,18.4,250,1357,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,10 Moosach
-10,Grundschüler_innen,Nationalität,ausländisch,21.6,299,1385,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,10 Moosach
-10,Grundschüler_innen,Nationalität,ausländisch,18.1,255,1408,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,10 Moosach
-10,Grundschüler_innen,Nationalität,ausländisch,24.0,339,1412,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,10 Moosach
-10,Grundschüler_innen,Nationalität,ausländisch,17.3,255,1478,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,10 Moosach
-10,Grundschüler_innen,Nationalität,ausländisch,19.3,266,1375,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,10 Moosach
-11,Grundschüler_innen,Nationalität,ausländisch,25.6,538,2105,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,11 Milbertshofen - Am Hart
-11,Grundschüler_innen,Nationalität,ausländisch,24.1,502,2087,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,11 Milbertshofen - Am Hart
-11,Grundschüler_innen,Nationalität,ausländisch,35.2,738,2098,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,11 Milbertshofen - Am Hart
-11,Grundschüler_innen,Nationalität,ausländisch,28.3,595,2101,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,11 Milbertshofen - Am Hart
-11,Grundschüler_innen,Nationalität,ausländisch,22.9,481,2096,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,11 Milbertshofen - Am Hart
-11,Grundschüler_innen,Nationalität,ausländisch,21.9,469,2140,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,11 Milbertshofen - Am Hart
-11,Grundschüler_innen,Nationalität,ausländisch,32.7,695,2128,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,11 Milbertshofen - Am Hart
-11,Grundschüler_innen,Nationalität,ausländisch,23.1,491,2121,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,11 Milbertshofen - Am Hart
-12,Grundschüler_innen,Nationalität,ausländisch,16.4,293,1792,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,12 Schwabing - Freimann
-12,Grundschüler_innen,Nationalität,ausländisch,15.6,290,1854,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,12 Schwabing - Freimann
-12,Grundschüler_innen,Nationalität,ausländisch,14.9,299,2013,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,12 Schwabing - Freimann
-12,Grundschüler_innen,Nationalität,ausländisch,14.8,289,1958,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,12 Schwabing - Freimann
-12,Grundschüler_innen,Nationalität,ausländisch,16.7,297,1775,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,12 Schwabing - Freimann
-12,Grundschüler_innen,Nationalität,ausländisch,17.9,313,1745,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,12 Schwabing - Freimann
-12,Grundschüler_innen,Nationalität,ausländisch,18.1,318,1756,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,12 Schwabing - Freimann
-12,Grundschüler_innen,Nationalität,ausländisch,15.3,287,1875,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,12 Schwabing - Freimann
-13,Grundschüler_innen,Nationalität,ausländisch,11.3,232,2062,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,13 Bogenhausen
-13,Grundschüler_innen,Nationalität,ausländisch,11.7,238,2029,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,13 Bogenhausen
-13,Grundschüler_innen,Nationalität,ausländisch,15.7,328,2094,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,13 Bogenhausen
-13,Grundschüler_innen,Nationalität,ausländisch,11.9,246,2075,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,13 Bogenhausen
-13,Grundschüler_innen,Nationalität,ausländisch,13.0,270,2083,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,13 Bogenhausen
-13,Grundschüler_innen,Nationalität,ausländisch,12.1,271,2244,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,13 Bogenhausen
-13,Grundschüler_innen,Nationalität,ausländisch,11.6,240,2070,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,13 Bogenhausen
-13,Grundschüler_innen,Nationalität,ausländisch,14.7,308,2100,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,13 Bogenhausen
-14,Grundschüler_innen,Nationalität,ausländisch,27.1,222,819,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,14 Berg am Laim
-14,Grundschüler_innen,Nationalität,ausländisch,29.6,234,791,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,14 Berg am Laim
-14,Grundschüler_innen,Nationalität,ausländisch,28.3,225,796,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,14 Berg am Laim
-14,Grundschüler_innen,Nationalität,ausländisch,25.7,212,826,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,14 Berg am Laim
-14,Grundschüler_innen,Nationalität,ausländisch,21.3,205,961,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,14 Berg am Laim
-14,Grundschüler_innen,Nationalität,ausländisch,31.2,253,810,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,14 Berg am Laim
-14,Grundschüler_innen,Nationalität,ausländisch,34.7,278,801,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,14 Berg am Laim
-14,Grundschüler_innen,Nationalität,ausländisch,22.5,194,862,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,14 Berg am Laim
-15,Grundschüler_innen,Nationalität,ausländisch,15.5,448,2897,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,15 Trudering - Riem
-15,Grundschüler_innen,Nationalität,ausländisch,13.0,347,2660,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,15 Trudering - Riem
-15,Grundschüler_innen,Nationalität,ausländisch,14.2,393,2766,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,15 Trudering - Riem
-15,Grundschüler_innen,Nationalität,ausländisch,14.3,446,3117,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,15 Trudering - Riem
-15,Grundschüler_innen,Nationalität,ausländisch,15.1,457,3027,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,15 Trudering - Riem
-15,Grundschüler_innen,Nationalität,ausländisch,12.4,315,2544,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,15 Trudering - Riem
-15,Grundschüler_innen,Nationalität,ausländisch,13.5,365,2700,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,15 Trudering - Riem
-15,Grundschüler_innen,Nationalität,ausländisch,14.8,470,3184,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,15 Trudering - Riem
-16,Grundschüler_innen,Nationalität,ausländisch,22.5,748,3322,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,16 Ramersdorf - Perlach
-16,Grundschüler_innen,Nationalität,ausländisch,28.4,878,3092,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,16 Ramersdorf - Perlach
-16,Grundschüler_innen,Nationalität,ausländisch,31.2,1013,3250,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,16 Ramersdorf - Perlach
-16,Grundschüler_innen,Nationalität,ausländisch,25.3,801,3168,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,16 Ramersdorf - Perlach
-16,Grundschüler_innen,Nationalität,ausländisch,23.4,767,3282,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,16 Ramersdorf - Perlach
-16,Grundschüler_innen,Nationalität,ausländisch,25.6,798,3121,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,16 Ramersdorf - Perlach
-16,Grundschüler_innen,Nationalität,ausländisch,24.6,797,3234,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,16 Ramersdorf - Perlach
-16,Grundschüler_innen,Nationalität,ausländisch,25.9,817,3154,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,16 Ramersdorf - Perlach
-17,Grundschüler_innen,Nationalität,ausländisch,29.9,344,1149,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,17 Obergiesing - Fasangarten
-17,Grundschüler_innen,Nationalität,ausländisch,15.0,205,1366,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,17 Obergiesing - Fasangarten
-17,Grundschüler_innen,Nationalität,ausländisch,26.2,304,1162,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,17 Obergiesing - Fasangarten
-17,Grundschüler_innen,Nationalität,ausländisch,17.9,222,1242,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,17 Obergiesing - Fasangarten
-17,Grundschüler_innen,Nationalität,ausländisch,21.4,258,1206,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,17 Obergiesing - Fasangarten
-17,Grundschüler_innen,Nationalität,ausländisch,19.4,238,1225,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,17 Obergiesing - Fasangarten
-17,Grundschüler_innen,Nationalität,ausländisch,17.3,217,1253,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,17 Obergiesing - Fasangarten
-17,Grundschüler_innen,Nationalität,ausländisch,16.2,211,1300,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,17 Obergiesing - Fasangarten
-18,Grundschüler_innen,Nationalität,ausländisch,17.2,201,1168,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,18 Untergiesing - Harlaching
-18,Grundschüler_innen,Nationalität,ausländisch,13.5,156,1153,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,18 Untergiesing - Harlaching
-18,Grundschüler_innen,Nationalität,ausländisch,13.5,151,1120,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,18 Untergiesing - Harlaching
-18,Grundschüler_innen,Nationalität,ausländisch,11.0,123,1121,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,18 Untergiesing - Harlaching
-18,Grundschüler_innen,Nationalität,ausländisch,11.2,122,1086,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,18 Untergiesing - Harlaching
-18,Grundschüler_innen,Nationalität,ausländisch,12.1,133,1098,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,18 Untergiesing - Harlaching
-18,Grundschüler_innen,Nationalität,ausländisch,14.6,166,1136,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,18 Untergiesing - Harlaching
-18,Grundschüler_innen,Nationalität,ausländisch,11.8,133,1130,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,18 Untergiesing - Harlaching
-19,Grundschüler_innen,Nationalität,ausländisch,12.8,266,2083,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
-19,Grundschüler_innen,Nationalität,ausländisch,13.4,297,2218,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
-19,Grundschüler_innen,Nationalität,ausländisch,16.0,379,2369,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
-19,Grundschüler_innen,Nationalität,ausländisch,12.8,278,2164,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
-19,Grundschüler_innen,Nationalität,ausländisch,12.5,253,2021,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
-19,Grundschüler_innen,Nationalität,ausländisch,13.2,264,1994,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
-19,Grundschüler_innen,Nationalität,ausländisch,15.5,309,1998,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
-19,Grundschüler_innen,Nationalität,ausländisch,18.3,374,2043,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
-2,Grundschüler_innen,Nationalität,ausländisch,17.4,181,1041,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
-2,Grundschüler_innen,Nationalität,ausländisch,20.9,202,965,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
-2,Grundschüler_innen,Nationalität,ausländisch,15.8,172,1087,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
-2,Grundschüler_innen,Nationalität,ausländisch,23.4,220,939,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+1,Grundschüler_innen,Nationalität,ausländisch,19.6,83,424,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,01 Altstadt - Lehel
 2,Grundschüler_innen,Nationalität,ausländisch,27.8,258,929,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
-2,Grundschüler_innen,Nationalität,ausländisch,17.4,178,1022,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Grundschüler_innen,Nationalität,ausländisch,23.4,220,939,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Grundschüler_innen,Nationalität,ausländisch,20.9,202,965,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
 2,Grundschüler_innen,Nationalität,ausländisch,18.1,177,978,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Grundschüler_innen,Nationalität,ausländisch,17.4,178,1022,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Grundschüler_innen,Nationalität,ausländisch,17.4,181,1041,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Grundschüler_innen,Nationalität,ausländisch,15.8,172,1087,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
 2,Grundschüler_innen,Nationalität,ausländisch,17.6,204,1157,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
-20,Grundschüler_innen,Nationalität,ausländisch,26.5,406,1532,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,20 Hadern
-20,Grundschüler_innen,Nationalität,ausländisch,22.5,348,1547,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,20 Hadern
-20,Grundschüler_innen,Nationalität,ausländisch,17.1,249,1457,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,20 Hadern
-20,Grundschüler_innen,Nationalität,ausländisch,15.7,226,1440,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,20 Hadern
-20,Grundschüler_innen,Nationalität,ausländisch,19.1,293,1538,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,20 Hadern
-20,Grundschüler_innen,Nationalität,ausländisch,14.9,214,1434,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,20 Hadern
-20,Grundschüler_innen,Nationalität,ausländisch,15.5,222,1436,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,20 Hadern
-20,Grundschüler_innen,Nationalität,ausländisch,15.9,229,1444,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,20 Hadern
-21,Grundschüler_innen,Nationalität,ausländisch,12.2,218,1785,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,21 Pasing - Obermenzing
-21,Grundschüler_innen,Nationalität,ausländisch,11.6,224,1927,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,21 Pasing - Obermenzing
-21,Grundschüler_innen,Nationalität,ausländisch,13.1,233,1778,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,21 Pasing - Obermenzing
-21,Grundschüler_innen,Nationalität,ausländisch,12.4,234,1885,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,21 Pasing - Obermenzing
-21,Grundschüler_innen,Nationalität,ausländisch,12.0,216,1795,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,21 Pasing - Obermenzing
-21,Grundschüler_innen,Nationalität,ausländisch,12.7,231,1816,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,21 Pasing - Obermenzing
-21,Grundschüler_innen,Nationalität,ausländisch,11.9,219,1839,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,21 Pasing - Obermenzing
-21,Grundschüler_innen,Nationalität,ausländisch,13.4,238,1774,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,21 Pasing - Obermenzing
-22,Grundschüler_innen,Nationalität,ausländisch,20.2,284,1409,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,22 Aubing - Lochhausen - Langwied
-22,Grundschüler_innen,Nationalität,ausländisch,21.4,290,1356,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,22 Aubing - Lochhausen - Langwied
-22,Grundschüler_innen,Nationalität,ausländisch,17.9,253,1413,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,22 Aubing - Lochhausen - Langwied
-22,Grundschüler_innen,Nationalität,ausländisch,26.6,374,1405,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,22 Aubing - Lochhausen - Langwied
-22,Grundschüler_innen,Nationalität,ausländisch,23.7,317,1340,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,22 Aubing - Lochhausen - Langwied
-22,Grundschüler_innen,Nationalität,ausländisch,19.3,272,1409,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,22 Aubing - Lochhausen - Langwied
-22,Grundschüler_innen,Nationalität,ausländisch,21.9,295,1347,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,22 Aubing - Lochhausen - Langwied
-22,Grundschüler_innen,Nationalität,ausländisch,21.9,306,1396,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,22 Aubing - Lochhausen - Langwied
-23,Grundschüler_innen,Nationalität,ausländisch,13.1,153,1169,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,23 Allach - Untermenzing
-23,Grundschüler_innen,Nationalität,ausländisch,15.9,188,1182,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,23 Allach - Untermenzing
-23,Grundschüler_innen,Nationalität,ausländisch,12.1,135,1118,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,23 Allach - Untermenzing
-23,Grundschüler_innen,Nationalität,ausländisch,14.6,162,1106,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,23 Allach - Untermenzing
-23,Grundschüler_innen,Nationalität,ausländisch,14.5,159,1094,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,23 Allach - Untermenzing
-23,Grundschüler_innen,Nationalität,ausländisch,15.1,175,1161,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,23 Allach - Untermenzing
-23,Grundschüler_innen,Nationalität,ausländisch,13.5,150,1115,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,23 Allach - Untermenzing
-23,Grundschüler_innen,Nationalität,ausländisch,17.3,208,1199,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,23 Allach - Untermenzing
-24,Grundschüler_innen,Nationalität,ausländisch,27.0,518,1920,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,24 Feldmoching - Hasenbergl
-24,Grundschüler_innen,Nationalität,ausländisch,13.8,272,1975,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,24 Feldmoching - Hasenbergl
-24,Grundschüler_innen,Nationalität,ausländisch,15.9,307,1932,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,24 Feldmoching - Hasenbergl
-24,Grundschüler_innen,Nationalität,ausländisch,29.7,588,1981,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,24 Feldmoching - Hasenbergl
-24,Grundschüler_innen,Nationalität,ausländisch,21.6,403,1868,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,24 Feldmoching - Hasenbergl
-24,Grundschüler_innen,Nationalität,ausländisch,19.6,362,1844,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,24 Feldmoching - Hasenbergl
-24,Grundschüler_innen,Nationalität,ausländisch,17.3,331,1918,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,24 Feldmoching - Hasenbergl
-24,Grundschüler_innen,Nationalität,ausländisch,23.0,430,1870,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,24 Feldmoching - Hasenbergl
-25,Grundschüler_innen,Nationalität,ausländisch,17.9,222,1237,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,25 Laim
-25,Grundschüler_innen,Nationalität,ausländisch,16.6,203,1222,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,25 Laim
-25,Grundschüler_innen,Nationalität,ausländisch,24.1,297,1233,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,25 Laim
-25,Grundschüler_innen,Nationalität,ausländisch,17.7,216,1218,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,25 Laim
-25,Grundschüler_innen,Nationalität,ausländisch,20.8,254,1221,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,25 Laim
-25,Grundschüler_innen,Nationalität,ausländisch,16.7,202,1209,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,25 Laim
-25,Grundschüler_innen,Nationalität,ausländisch,17.7,215,1212,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,25 Laim
-25,Grundschüler_innen,Nationalität,ausländisch,19.1,234,1224,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,25 Laim
-3,Grundschüler_innen,Nationalität,ausländisch,15.3,153,997,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,03 Maxvorstadt
 3,Grundschüler_innen,Nationalität,ausländisch,19.6,195,995,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,03 Maxvorstadt
-3,Grundschüler_innen,Nationalität,ausländisch,15.3,166,1088,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,03 Maxvorstadt
 3,Grundschüler_innen,Nationalität,ausländisch,17.1,171,1000,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,03 Maxvorstadt
-3,Grundschüler_innen,Nationalität,ausländisch,15.0,154,1026,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,03 Maxvorstadt
+3,Grundschüler_innen,Nationalität,ausländisch,16.1,160,993,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,03 Maxvorstadt
+3,Grundschüler_innen,Nationalität,ausländisch,15.3,153,997,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,03 Maxvorstadt
 3,Grundschüler_innen,Nationalität,ausländisch,13.9,139,1001,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,03 Maxvorstadt
 3,Grundschüler_innen,Nationalität,ausländisch,14.1,140,992,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,03 Maxvorstadt
-3,Grundschüler_innen,Nationalität,ausländisch,16.1,160,993,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,03 Maxvorstadt
+3,Grundschüler_innen,Nationalität,ausländisch,15,154,1026,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,03 Maxvorstadt
+3,Grundschüler_innen,Nationalität,ausländisch,15.3,166,1088,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,03 Maxvorstadt
 4,Grundschüler_innen,Nationalität,ausländisch,14.3,73,512,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,04 Schwabing - West
-4,Grundschüler_innen,Nationalität,ausländisch,16.9,93,549,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,04 Schwabing - West
-4,Grundschüler_innen,Nationalität,ausländisch,18.4,94,511,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,04 Schwabing - West
-4,Grundschüler_innen,Nationalität,ausländisch,15.9,78,491,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,04 Schwabing - West
-4,Grundschüler_innen,Nationalität,ausländisch,16.6,95,572,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,04 Schwabing - West
 4,Grundschüler_innen,Nationalität,ausländisch,14.1,71,503,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,04 Schwabing - West
-4,Grundschüler_innen,Nationalität,ausländisch,17.2,83,482,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,04 Schwabing - West
 4,Grundschüler_innen,Nationalität,ausländisch,13.9,69,495,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,04 Schwabing - West
+4,Grundschüler_innen,Nationalität,ausländisch,15.9,78,491,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,04 Schwabing - West
+4,Grundschüler_innen,Nationalität,ausländisch,17.2,83,482,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,04 Schwabing - West
+4,Grundschüler_innen,Nationalität,ausländisch,18.4,94,511,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,04 Schwabing - West
+4,Grundschüler_innen,Nationalität,ausländisch,16.9,93,549,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,04 Schwabing - West
+4,Grundschüler_innen,Nationalität,ausländisch,16.6,95,572,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,04 Schwabing - West
+5,Grundschüler_innen,Nationalität,ausländisch,17.2,230,1334,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,05 Au - Haidhausen
+5,Grundschüler_innen,Nationalität,ausländisch,15.9,219,1381,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,05 Au - Haidhausen
+5,Grundschüler_innen,Nationalität,ausländisch,13.1,178,1356,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,05 Au - Haidhausen
+5,Grundschüler_innen,Nationalität,ausländisch,11.4,155,1361,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,05 Au - Haidhausen
 5,Grundschüler_innen,Nationalität,ausländisch,11.9,175,1467,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,05 Au - Haidhausen
 5,Grundschüler_innen,Nationalität,ausländisch,12.4,189,1524,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,05 Au - Haidhausen
 5,Grundschüler_innen,Nationalität,ausländisch,11.9,182,1535,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,05 Au - Haidhausen
-5,Grundschüler_innen,Nationalität,ausländisch,13.1,178,1356,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,05 Au - Haidhausen
-5,Grundschüler_innen,Nationalität,ausländisch,12.0,195,1621,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,05 Au - Haidhausen
-5,Grundschüler_innen,Nationalität,ausländisch,15.9,219,1381,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,05 Au - Haidhausen
-5,Grundschüler_innen,Nationalität,ausländisch,17.2,230,1334,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,05 Au - Haidhausen
-5,Grundschüler_innen,Nationalität,ausländisch,11.4,155,1361,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,05 Au - Haidhausen
+5,Grundschüler_innen,Nationalität,ausländisch,12,195,1621,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,05 Au - Haidhausen
+6,Grundschüler_innen,Nationalität,ausländisch,27.4,270,984,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,06 Sendling
 6,Grundschüler_innen,Nationalität,ausländisch,23.7,239,1010,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,06 Sendling
 6,Grundschüler_innen,Nationalität,ausländisch,23.8,250,1050,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,06 Sendling
 6,Grundschüler_innen,Nationalität,ausländisch,21.3,226,1061,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,06 Sendling
-6,Grundschüler_innen,Nationalität,ausländisch,17.1,194,1135,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,06 Sendling
-6,Grundschüler_innen,Nationalität,ausländisch,27.4,270,984,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,06 Sendling
-6,Grundschüler_innen,Nationalität,ausländisch,19.2,210,1095,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,06 Sendling
 6,Grundschüler_innen,Nationalität,ausländisch,21.3,225,1058,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,06 Sendling
 6,Grundschüler_innen,Nationalität,ausländisch,19.2,203,1055,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,06 Sendling
-7,Grundschüler_innen,Nationalität,ausländisch,19.8,181,912,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,07 Sendling - Westpark
-7,Grundschüler_innen,Nationalität,ausländisch,23.9,216,902,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,07 Sendling - Westpark
-7,Grundschüler_innen,Nationalität,ausländisch,17.2,164,953,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,07 Sendling - Westpark
-7,Grundschüler_innen,Nationalität,ausländisch,19.6,175,891,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,07 Sendling - Westpark
-7,Grundschüler_innen,Nationalität,ausländisch,21.4,185,864,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,07 Sendling - Westpark
-7,Grundschüler_innen,Nationalität,ausländisch,19.0,175,920,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,07 Sendling - Westpark
-7,Grundschüler_innen,Nationalität,ausländisch,18.6,162,869,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,07 Sendling - Westpark
+6,Grundschüler_innen,Nationalität,ausländisch,19.2,210,1095,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,06 Sendling
+6,Grundschüler_innen,Nationalität,ausländisch,17.1,194,1135,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,06 Sendling
 7,Grundschüler_innen,Nationalität,ausländisch,25.1,222,883,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,07 Sendling - Westpark
+7,Grundschüler_innen,Nationalität,ausländisch,23.9,216,902,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,07 Sendling - Westpark
+7,Grundschüler_innen,Nationalität,ausländisch,21.4,185,864,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,07 Sendling - Westpark
+7,Grundschüler_innen,Nationalität,ausländisch,18.6,162,869,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,07 Sendling - Westpark
+7,Grundschüler_innen,Nationalität,ausländisch,19.6,175,891,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,07 Sendling - Westpark
+7,Grundschüler_innen,Nationalität,ausländisch,19.8,181,912,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,07 Sendling - Westpark
+7,Grundschüler_innen,Nationalität,ausländisch,19,175,920,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,07 Sendling - Westpark
+7,Grundschüler_innen,Nationalität,ausländisch,17.2,164,953,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,07 Sendling - Westpark
+8,Grundschüler_innen,Nationalität,ausländisch,30,175,584,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,08 Schwanthalerhöhe
+8,Grundschüler_innen,Nationalität,ausländisch,26.7,151,565,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,08 Schwanthalerhöhe
 8,Grundschüler_innen,Nationalität,ausländisch,26.2,152,581,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,08 Schwanthalerhöhe
-8,Grundschüler_innen,Nationalität,ausländisch,15.6,95,608,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,08 Schwanthalerhöhe
-8,Grundschüler_innen,Nationalität,ausländisch,20.3,126,621,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,08 Schwanthalerhöhe
+8,Grundschüler_innen,Nationalität,ausländisch,23.7,141,595,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,08 Schwanthalerhöhe
 8,Grundschüler_innen,Nationalität,ausländisch,22.7,136,600,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,08 Schwanthalerhöhe
 8,Grundschüler_innen,Nationalität,ausländisch,20.8,121,581,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,08 Schwanthalerhöhe
-8,Grundschüler_innen,Nationalität,ausländisch,23.7,141,595,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,08 Schwanthalerhöhe
-8,Grundschüler_innen,Nationalität,ausländisch,30.0,175,584,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,08 Schwanthalerhöhe
-8,Grundschüler_innen,Nationalität,ausländisch,26.7,151,565,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,08 Schwanthalerhöhe
-9,Grundschüler_innen,Nationalität,ausländisch,14.9,312,2089,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,09 Neuhausen - Nymphenburg
-9,Grundschüler_innen,Nationalität,ausländisch,13.2,297,2251,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,09 Neuhausen - Nymphenburg
-9,Grundschüler_innen,Nationalität,ausländisch,12.5,303,2433,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,09 Neuhausen - Nymphenburg
-9,Grundschüler_innen,Nationalität,ausländisch,12.4,344,2772,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,09 Neuhausen - Nymphenburg
+8,Grundschüler_innen,Nationalität,ausländisch,20.3,126,621,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,08 Schwanthalerhöhe
+8,Grundschüler_innen,Nationalität,ausländisch,15.6,95,608,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,08 Schwanthalerhöhe
 9,Grundschüler_innen,Nationalität,ausländisch,20.3,415,2040,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,09 Neuhausen - Nymphenburg
 9,Grundschüler_innen,Nationalität,ausländisch,17.3,351,2027,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Grundschüler_innen,Nationalität,ausländisch,14.9,312,2089,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,09 Neuhausen - Nymphenburg
 9,Grundschüler_innen,Nationalität,ausländisch,12.8,273,2140,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Grundschüler_innen,Nationalität,ausländisch,13.2,297,2251,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Grundschüler_innen,Nationalität,ausländisch,12.5,303,2433,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,09 Neuhausen - Nymphenburg
 9,Grundschüler_innen,Nationalität,ausländisch,12.2,317,2592,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Grundschüler_innen,Nationalität,ausländisch,12.4,344,2772,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,09 Neuhausen - Nymphenburg
+10,Grundschüler_innen,Nationalität,ausländisch,24,339,1412,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,10 Moosach
+10,Grundschüler_innen,Nationalität,ausländisch,21.6,299,1385,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,10 Moosach
+10,Grundschüler_innen,Nationalität,ausländisch,19.1,269,1409,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,10 Moosach
+10,Grundschüler_innen,Nationalität,ausländisch,19.3,266,1375,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,10 Moosach
+10,Grundschüler_innen,Nationalität,ausländisch,18.4,250,1357,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,10 Moosach
+10,Grundschüler_innen,Nationalität,ausländisch,18.1,255,1408,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,10 Moosach
+10,Grundschüler_innen,Nationalität,ausländisch,17.4,252,1445,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,10 Moosach
+10,Grundschüler_innen,Nationalität,ausländisch,17.3,255,1478,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,10 Moosach
+11,Grundschüler_innen,Nationalität,ausländisch,35.2,738,2098,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Grundschüler_innen,Nationalität,ausländisch,32.7,695,2128,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Grundschüler_innen,Nationalität,ausländisch,28.3,595,2101,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Grundschüler_innen,Nationalität,ausländisch,25.6,538,2105,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Grundschüler_innen,Nationalität,ausländisch,24.1,502,2087,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Grundschüler_innen,Nationalität,ausländisch,22.9,481,2096,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Grundschüler_innen,Nationalität,ausländisch,23.1,491,2121,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Grundschüler_innen,Nationalität,ausländisch,21.9,469,2140,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,11 Milbertshofen - Am Hart
+12,Grundschüler_innen,Nationalität,ausländisch,18.1,318,1756,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,12 Schwabing - Freimann
+12,Grundschüler_innen,Nationalität,ausländisch,17.9,313,1745,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,12 Schwabing - Freimann
+12,Grundschüler_innen,Nationalität,ausländisch,16.7,297,1775,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,12 Schwabing - Freimann
+12,Grundschüler_innen,Nationalität,ausländisch,16.4,293,1792,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,12 Schwabing - Freimann
+12,Grundschüler_innen,Nationalität,ausländisch,15.6,290,1854,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,12 Schwabing - Freimann
+12,Grundschüler_innen,Nationalität,ausländisch,15.3,287,1875,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,12 Schwabing - Freimann
+12,Grundschüler_innen,Nationalität,ausländisch,14.8,289,1958,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,12 Schwabing - Freimann
+12,Grundschüler_innen,Nationalität,ausländisch,14.9,299,2013,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,12 Schwabing - Freimann
+13,Grundschüler_innen,Nationalität,ausländisch,15.7,328,2094,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,13 Bogenhausen
+13,Grundschüler_innen,Nationalität,ausländisch,14.7,308,2100,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,13 Bogenhausen
+13,Grundschüler_innen,Nationalität,ausländisch,13,270,2083,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,13 Bogenhausen
+13,Grundschüler_innen,Nationalität,ausländisch,11.7,238,2029,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,13 Bogenhausen
+13,Grundschüler_innen,Nationalität,ausländisch,11.9,246,2075,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,13 Bogenhausen
+13,Grundschüler_innen,Nationalität,ausländisch,11.3,232,2062,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,13 Bogenhausen
+13,Grundschüler_innen,Nationalität,ausländisch,11.6,240,2070,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,13 Bogenhausen
+13,Grundschüler_innen,Nationalität,ausländisch,12.1,271,2244,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,13 Bogenhausen
+14,Grundschüler_innen,Nationalität,ausländisch,34.7,278,801,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,14 Berg am Laim
+14,Grundschüler_innen,Nationalität,ausländisch,31.2,253,810,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,14 Berg am Laim
+14,Grundschüler_innen,Nationalität,ausländisch,29.6,234,791,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,14 Berg am Laim
+14,Grundschüler_innen,Nationalität,ausländisch,28.3,225,796,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,14 Berg am Laim
+14,Grundschüler_innen,Nationalität,ausländisch,27.1,222,819,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,14 Berg am Laim
+14,Grundschüler_innen,Nationalität,ausländisch,25.7,212,826,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,14 Berg am Laim
+14,Grundschüler_innen,Nationalität,ausländisch,22.5,194,862,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,14 Berg am Laim
+14,Grundschüler_innen,Nationalität,ausländisch,21.3,205,961,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,14 Berg am Laim
+15,Grundschüler_innen,Nationalität,ausländisch,12.4,315,2544,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,15 Trudering - Riem
+15,Grundschüler_innen,Nationalität,ausländisch,13,347,2660,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,15 Trudering - Riem
+15,Grundschüler_innen,Nationalität,ausländisch,13.5,365,2700,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,15 Trudering - Riem
+15,Grundschüler_innen,Nationalität,ausländisch,14.2,393,2766,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,15 Trudering - Riem
+15,Grundschüler_innen,Nationalität,ausländisch,15.5,448,2897,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,15 Trudering - Riem
+15,Grundschüler_innen,Nationalität,ausländisch,15.1,457,3027,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,15 Trudering - Riem
+15,Grundschüler_innen,Nationalität,ausländisch,14.3,446,3117,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,15 Trudering - Riem
+15,Grundschüler_innen,Nationalität,ausländisch,14.8,470,3184,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,15 Trudering - Riem
+16,Grundschüler_innen,Nationalität,ausländisch,31.2,1013,3250,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,16 Ramersdorf - Perlach
+16,Grundschüler_innen,Nationalität,ausländisch,28.4,878,3092,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,16 Ramersdorf - Perlach
+16,Grundschüler_innen,Nationalität,ausländisch,25.9,817,3154,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,16 Ramersdorf - Perlach
+16,Grundschüler_innen,Nationalität,ausländisch,25.6,798,3121,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,16 Ramersdorf - Perlach
+16,Grundschüler_innen,Nationalität,ausländisch,25.3,801,3168,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,16 Ramersdorf - Perlach
+16,Grundschüler_innen,Nationalität,ausländisch,24.6,797,3234,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,16 Ramersdorf - Perlach
+16,Grundschüler_innen,Nationalität,ausländisch,23.4,767,3282,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,16 Ramersdorf - Perlach
+16,Grundschüler_innen,Nationalität,ausländisch,22.5,748,3322,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,16 Ramersdorf - Perlach
+17,Grundschüler_innen,Nationalität,ausländisch,29.9,344,1149,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Grundschüler_innen,Nationalität,ausländisch,26.2,304,1162,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Grundschüler_innen,Nationalität,ausländisch,21.4,258,1206,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Grundschüler_innen,Nationalität,ausländisch,19.4,238,1225,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Grundschüler_innen,Nationalität,ausländisch,17.9,222,1242,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Grundschüler_innen,Nationalität,ausländisch,17.3,217,1253,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Grundschüler_innen,Nationalität,ausländisch,16.2,211,1300,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Grundschüler_innen,Nationalität,ausländisch,15,205,1366,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,17 Obergiesing - Fasangarten
+18,Grundschüler_innen,Nationalität,ausländisch,17.2,201,1168,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,18 Untergiesing - Harlaching
+18,Grundschüler_innen,Nationalität,ausländisch,14.6,166,1136,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,18 Untergiesing - Harlaching
+18,Grundschüler_innen,Nationalität,ausländisch,13.5,151,1120,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,18 Untergiesing - Harlaching
+18,Grundschüler_innen,Nationalität,ausländisch,11.8,133,1130,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,18 Untergiesing - Harlaching
+18,Grundschüler_innen,Nationalität,ausländisch,11.2,122,1086,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,18 Untergiesing - Harlaching
+18,Grundschüler_innen,Nationalität,ausländisch,11,123,1121,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,18 Untergiesing - Harlaching
+18,Grundschüler_innen,Nationalität,ausländisch,12.1,133,1098,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,18 Untergiesing - Harlaching
+18,Grundschüler_innen,Nationalität,ausländisch,13.5,156,1153,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,18 Untergiesing - Harlaching
+19,Grundschüler_innen,Nationalität,ausländisch,18.3,374,2043,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Grundschüler_innen,Nationalität,ausländisch,15.5,309,1998,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Grundschüler_innen,Nationalität,ausländisch,13.2,264,1994,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Grundschüler_innen,Nationalität,ausländisch,12.5,253,2021,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Grundschüler_innen,Nationalität,ausländisch,12.8,266,2083,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Grundschüler_innen,Nationalität,ausländisch,12.8,278,2164,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Grundschüler_innen,Nationalität,ausländisch,13.4,297,2218,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Grundschüler_innen,Nationalität,ausländisch,16,379,2369,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+20,Grundschüler_innen,Nationalität,ausländisch,26.5,406,1532,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,20 Hadern
+20,Grundschüler_innen,Nationalität,ausländisch,22.5,348,1547,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,20 Hadern
+20,Grundschüler_innen,Nationalität,ausländisch,19.1,293,1538,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,20 Hadern
+20,Grundschüler_innen,Nationalität,ausländisch,17.1,249,1457,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,20 Hadern
+20,Grundschüler_innen,Nationalität,ausländisch,15.9,229,1444,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,20 Hadern
+20,Grundschüler_innen,Nationalität,ausländisch,15.7,226,1440,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,20 Hadern
+20,Grundschüler_innen,Nationalität,ausländisch,15.5,222,1436,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,20 Hadern
+20,Grundschüler_innen,Nationalität,ausländisch,14.9,214,1434,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,20 Hadern
+21,Grundschüler_innen,Nationalität,ausländisch,13.1,233,1778,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,21 Pasing - Obermenzing
+21,Grundschüler_innen,Nationalität,ausländisch,13.4,238,1774,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,21 Pasing - Obermenzing
+21,Grundschüler_innen,Nationalität,ausländisch,12,216,1795,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,21 Pasing - Obermenzing
+21,Grundschüler_innen,Nationalität,ausländisch,12.7,231,1816,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,21 Pasing - Obermenzing
+21,Grundschüler_innen,Nationalität,ausländisch,12.2,218,1785,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,21 Pasing - Obermenzing
+21,Grundschüler_innen,Nationalität,ausländisch,11.9,219,1839,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,21 Pasing - Obermenzing
+21,Grundschüler_innen,Nationalität,ausländisch,12.4,234,1885,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,21 Pasing - Obermenzing
+21,Grundschüler_innen,Nationalität,ausländisch,11.6,224,1927,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,21 Pasing - Obermenzing
+22,Grundschüler_innen,Nationalität,ausländisch,26.6,374,1405,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Grundschüler_innen,Nationalität,ausländisch,23.7,317,1340,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Grundschüler_innen,Nationalität,ausländisch,21.9,295,1347,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Grundschüler_innen,Nationalität,ausländisch,21.4,290,1356,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Grundschüler_innen,Nationalität,ausländisch,21.9,306,1396,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Grundschüler_innen,Nationalität,ausländisch,20.2,284,1409,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Grundschüler_innen,Nationalität,ausländisch,19.3,272,1409,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Grundschüler_innen,Nationalität,ausländisch,17.9,253,1413,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+23,Grundschüler_innen,Nationalität,ausländisch,17.3,208,1199,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,23 Allach - Untermenzing
+23,Grundschüler_innen,Nationalität,ausländisch,15.9,188,1182,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,23 Allach - Untermenzing
+23,Grundschüler_innen,Nationalität,ausländisch,15.1,175,1161,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,23 Allach - Untermenzing
+23,Grundschüler_innen,Nationalität,ausländisch,14.6,162,1106,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,23 Allach - Untermenzing
+23,Grundschüler_innen,Nationalität,ausländisch,14.5,159,1094,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,23 Allach - Untermenzing
+23,Grundschüler_innen,Nationalität,ausländisch,13.5,150,1115,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,23 Allach - Untermenzing
+23,Grundschüler_innen,Nationalität,ausländisch,12.1,135,1118,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,23 Allach - Untermenzing
+23,Grundschüler_innen,Nationalität,ausländisch,13.1,153,1169,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,23 Allach - Untermenzing
+24,Grundschüler_innen,Nationalität,ausländisch,29.7,588,1981,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Grundschüler_innen,Nationalität,ausländisch,27,518,1920,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Grundschüler_innen,Nationalität,ausländisch,23,430,1870,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Grundschüler_innen,Nationalität,ausländisch,21.6,403,1868,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Grundschüler_innen,Nationalität,ausländisch,19.6,362,1844,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Grundschüler_innen,Nationalität,ausländisch,17.3,331,1918,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Grundschüler_innen,Nationalität,ausländisch,15.9,307,1932,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Grundschüler_innen,Nationalität,ausländisch,13.8,272,1975,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,24 Feldmoching - Hasenbergl
+25,Grundschüler_innen,Nationalität,ausländisch,24.1,297,1233,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Stadtbezirk,25 Laim
+25,Grundschüler_innen,Nationalität,ausländisch,20.8,254,1221,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Stadtbezirk,25 Laim
+25,Grundschüler_innen,Nationalität,ausländisch,19.1,234,1224,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Stadtbezirk,25 Laim
+25,Grundschüler_innen,Nationalität,ausländisch,17.7,216,1218,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Stadtbezirk,25 Laim
+25,Grundschüler_innen,Nationalität,ausländisch,16.7,202,1209,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Stadtbezirk,25 Laim
+25,Grundschüler_innen,Nationalität,ausländisch,17.9,222,1237,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Stadtbezirk,25 Laim
+25,Grundschüler_innen,Nationalität,ausländisch,17.7,215,1212,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Stadtbezirk,25 Laim
+25,Grundschüler_innen,Nationalität,ausländisch,16.6,203,1222,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Stadtbezirk,25 Laim
+#100,Grundschüler_innen,Nationalität,ausländisch,22.9,8239,36019,ausländische Grundschüler_innen,alle Grundschüler_innen,2007,Gesamtstadt,Stadt München
+#100,Grundschüler_innen,Nationalität,ausländisch,20.7,7425,35852,ausländische Grundschüler_innen,alle Grundschüler_innen,2008,Gesamtstadt,Stadt München
+#100,Grundschüler_innen,Nationalität,ausländisch,18.7,6745,36007,ausländische Grundschüler_innen,alle Grundschüler_innen,2009,Gesamtstadt,Stadt München
+#100,Grundschüler_innen,Nationalität,ausländisch,17.7,6360,36009,ausländische Grundschüler_innen,alle Grundschüler_innen,2010,Gesamtstadt,Stadt München
+#100,Grundschüler_innen,Nationalität,ausländisch,17.3,6332,36593,ausländische Grundschüler_innen,alle Grundschüler_innen,2011,Gesamtstadt,Stadt München
+#100,Grundschüler_innen,Nationalität,ausländisch,16.7,6258,37478,ausländische Grundschüler_innen,alle Grundschüler_innen,2012,Gesamtstadt,Stadt München
+#100,Grundschüler_innen,Nationalität,ausländisch,16.2,6207,38287,ausländische Grundschüler_innen,alle Grundschüler_innen,2013,Gesamtstadt,Stadt München
+#100,Grundschüler_innen,Nationalität,ausländisch,15.9,6316,39700,ausländische Grundschüler_innen,alle Grundschüler_innen,2014,Gesamtstadt,Stadt München
+NUMMER,INDIKATOR_GRUPPE,INDIKATOR_BEZEICHNUNG,INDIKATOR_AUSPRAEGUNG,INDIKATOR_WERT,BASISWERT_1,BASISWERT_2,NAME_BASISWERT1,NAME_BASISWERT2,JAHR,GLIEDERUNG,NAME
