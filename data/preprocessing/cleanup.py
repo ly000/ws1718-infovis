@@ -9,7 +9,7 @@ def preproc(input, output):
     data = data[data['INDIKATOR_AUSPRAEGUNG'] != 'deutsch'];
     data = data.sort_index(ascending=True);
     data['INDIKATOR_WERT'].astype(float);
-    data = data.groupby('NUMMER').mean();
+    #data = data.groupby('NUMMER').mean();
     data.to_csv(output);
     print(data.groupby('NUMMER').mean().head());
 
