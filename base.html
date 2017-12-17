@@ -42,7 +42,7 @@
     <div id="textright"> <b> Here is some flavortext</b> </div>
     <div id="graphright"> </div>
   </div>
-  </div>
+</div>
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -68,111 +68,94 @@
         .append("g");
 
       var color = d3.scaleLinear().range(["blue", "red"]);
-      var showValue = "INDIKATOR_WERT";
-      var record = [];
+      var showValue= "INDIKATOR_WERT";
+      var record=[];
 
-      // set the dimensions and margins of the graph
-      var margin = {
-          top: 20,
-          right: 20,
-          bottom: 30,
-          left: 50
-        },
-        width = 960 - margin.left - margin.right,
-        height = 500 - margin.top - margin.bottom;
+        // set the dimensions and margins of the graph
+        var margin = {top: 20, right: 20, bottom: 30, left: 50},
+            width = 960 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
 
-      // parse the date / time
-      var parseTime = d3.timeParse("%d-%b-%y");
+// parse the date / time
+        var parseTime = d3.timeParse("%d-%b-%y");
 
-      // set the ranges
-      var x = d3.scaleTime().range([0, width]);
-      var y = d3.scaleLinear().range([height, 0]);
+// set the ranges
+        var x = d3.scaleTime().range([0, width]);
+        var y = d3.scaleLinear().range([height, 0]);
 
-      // define the area
-      var area = d3.area()
-        .x(function(d) {
-          return x(d.date);
-        })
-        .y0(height)
-        .y1(function(d) {
-          return y(d.close);
+// define the area
+        var area = d3.area()
+            .x(function(d) { return x(d.date); })
+            .y0(height)
+            .y1(function(d) { return y(d.close); });
+
+// define the line
+        var valueline = d3.line()
+            .x(function(d) { return x(d.date); })
+            .y(function(d) { return y(d.close); });
+
+// append the svg obgect to the body of the page
+// appends a 'group' element to 'svg'
+// moves the 'group' element to the top left margin
+        var svg2 = d3.select("#graphright").append("svg")
+            .attr("width", 450 + margin.left + margin.right)
+            .attr("height", 350 + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+// get the data
+        d3.csv("data.csv", function(error, data) {
+            if (error) throw error;
+
+            // format the data
+            data.forEach(function (d) {
+                d.date = parseTime(d.date);
+                d.close = +d.close;
+            });
+
+            // scale the range of the data
+            x.domain(d3.extent(data, function (d) {
+                return d.date;
+            }));
+            y.domain([0, d3.max(data, function (d) {
+                return d.close;
+            })]);
+
+            // add the area
+            svg2.append("path")
+                .data([data])
+                .attr("width", 300)
+                .attr("height", 300)
+                .attr("class", "area")
+                .attr("d", area);
+
+            // add the valueline path.
+            svg2.append("path")
+                .data([data])
+                .attr("class", "line")
+                .attr("d", valueline);
+
+            // add the X Axis
+            svg2.append("g")
+                .attr("transform", "translate(0," + 350 + ")")
+                .call(d3.axisBottom(x));
+
+            // add the Y Axis
+            svg2.append("g")
+                //.attr("transform", "translate(0," + 400 + ")")
+                .call(d3.axisLeft(y));
+
         });
 
-      // define the line
-      var valueline = d3.line()
-        .x(function(d) {
-          return x(d.date);
-        })
-        .y(function(d) {
-          return y(d.close);
-        });
-
-      // append the svg obgect to the body of the page
-      // appends a 'group' element to 'svg'
-      // moves the 'group' element to the top left margin
-      var svg2 = d3.select("#graphright").append("svg")
-        .attr("width", 450 + margin.left + margin.right)
-        .attr("height", 350 + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
-
-      // get the data
-      d3.csv("data.csv", function(error, data) {
-        if (error) throw error;
-
-        // format the data
-        data.forEach(function(d) {
-          d.date = parseTime(d.date);
-          d.close = +d.close;
-        });
-
-        // scale the range of the data
-        x.domain(d3.extent(data, function(d) {
-          return d.date;
-        }));
-        y.domain([0, d3.max(data, function(d) {
-          return d.close;
-        })]);
-
-        // add the area
-        svg2.append("path")
-          .data([data])
-          .attr("width", 300)
-          .attr("height", 300)
-          .attr("class", "area")
-          .attr("d", area);
-
-        // add the valueline path.
-        svg2.append("path")
-          .data([data])
-          .attr("class", "line")
-          .attr("d", valueline);
-
-        // add the X Axis
-        svg2.append("g")
-          .attr("transform", "translate(0," + 350 + ")")
-          .call(d3.axisBottom(x));
-
-        // add the Y Axis
-        svg2.append("g")
-          //.attr("transform", "translate(0," + 400 + ")")
-          .call(d3.axisLeft(y));
-
-      });
-
-      //Prepare datastructures
-      function addRecord(d) {
-        d[showValue] = +d[showValue];
-        var obj = {
-          key: d.NUMMER,
-          value: d[showValue]
-        };
-        record.push(obj);
-        return d;
+        //Prepare datastructures
+      function addRecord(d){
+          d[showValue]=+d[showValue];
+          var obj = {key: d.NUMMER, value: d[showValue]};
+          record.push(obj);
+          return d;
       }
 
-      // test.csv ^= average, primaryschool_ds.csv ^=everything else
       d3.csv("data/preprocessing/test.csv", addRecord, function(error, data) {
         color.domain(d3.extent(data, function(d) {
           return d[showValue];
@@ -202,7 +185,7 @@
           .style('stroke-width', 1)
           .on('mouseover', handleMouseover)
           .on('mouseout', handleMouseout);
-        //.on('click', click);
+          //.on('click', click);
       });
 
       //Bind tooltip to map
@@ -213,16 +196,16 @@
       svg.call(tip);
 
       //Helper functions
-      function handleMouseover(d) {
+      function handleMouseover(d){
         d3.select(this).style("fill", function() {
-          return d3.rgb(d3.select(this).style("fill")).darker(1);
+            return d3.rgb(d3.select(this).style("fill")).darker(1);
         });
         tip.show(d);
       };
 
-      function handleMouseout(d) {
+      function handleMouseout(d){
         d3.select(this).style("fill", function() {
-          return d3.rgb(d3.select(this).style("fill")).darker(-1);
+            return d3.rgb(d3.select(this).style("fill")).darker(-1);
         });
         tip.hide(d);
       };
