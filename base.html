@@ -39,20 +39,29 @@
   </div>
 
   <div id="sideRight">
-    <div id="textright"> <b> Here is some flavortext</b> </div>
+    <div id="textright"> <b id="textR"> Here is some flavortext</b>
+      <div id="detailed">
+        <input name="updateButton"
+               type="button"
+               value="Update"
+               onclick="updateData()" />
+      </div></div>
+
     <div id="graphright"> </div>
   </div>
 </div>
 
   <script type="text/javascript">
+
     $(document).ready(function() {
+
+      //Grundschuldaten
 
       //Initializing needed data
       var dataset = d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv");
       var color = d3.scaleLinear().range(["blue", "red"]);
       var showValue = "INDIKATOR_WERT";
       var record = [];
-
       var width = 800;
       var height = 600;
 
@@ -71,82 +80,7 @@
       var showValue= "INDIKATOR_WERT";
       var record=[];
 
-        // set the dimensions and margins of the graph
-        var margin = {top: 20, right: 20, bottom: 30, left: 50},
-            width = 540 - margin.left - margin.right,
-            height = 400 - margin.top - margin.bottom;
 
-
-
-// set the ranges
-        var x = d3.scaleLinear().range([0, width]);
-        var y = d3.scaleLinear().range([height, 0]);
-
-// define the area
-        var area = d3.area()
-            .x(function(d) { return x(d.date); })
-            .y0(height)
-            .y1(function(d) { return y(d.close); });
-
-// define the line
-        var valueline = d3.line()
-            .x(function(d) { return x(d.date); })
-            .y(function(d) { return y(d.close); });
-
-// append the svg obgect to the body of the page
-// appends a 'group' element to 'svg'
-// moves the 'group' element to the top left margin
-
-        var svg2 = d3.select("#graphright").append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform",
-                "translate(" + margin.left + "," + margin.top + ")");
-
-// get the data
-        d3.csv("data.csv", function(error, data) {
-            if (error) throw error;
-
-            // scale the range of the data
-            x.domain(d3.extent(data, function (d) {
-                return d.date;
-            }));
-            y.domain([1, d3.max(data, function (d) {
-                return d.close;
-            })]);
-
-            // add the area
-            svg2.append("graph")
-                .data([data])
-                .attr("width", 300)
-                .attr("height", 300)
-                .attr("class", "area")
-                .attr("d", area);
-
-            // add the valueline path.
-            svg2.append("path")
-                .data([data])
-                .attr("class", "line")
-                .attr("d", valueline);
-
-            // Add the X Axis
-            svg2.append("g")
-                .attr("class", "axis")
-                .attr("transform", "translate(0," + height + ")")
-                .call(d3.axisBottom(x).ticks(10))
-                .selectAll("text")
-                .style("text-anchor", "end")
-                .attr("dx", "-.8em")
-                .attr("dy", ".15em")
-                //.attr("transform", "rotate(-65)");
-
-            // Add the Y Axis
-            svg2.append("g")
-                .attr("class", "axis")
-                .call(d3.axisLeft(y));
-
-        });
 
         //Prepare datastructures
       function addRecord(d){
@@ -184,8 +118,8 @@
           .style('stroke', 'black')
           .style('stroke-width', 1)
           .on('mouseover', handleMouseover)
-          .on('mouseout', handleMouseout);
-          //.on('click', click);
+          .on('mouseout', handleMouseout)
+          .on('click', click);
       });
 
       //Bind tooltip to map
@@ -244,8 +178,8 @@
         //console.info(this.dataset.name)
         // Highlight hovered province
         //d3.select(this).style('fill', 'black');
-        $('#textright').empty();
-        $('#textright').html(this.id + " " + this.getAttribute('title'));
+        $('#textR').empty();
+        $('#textR').html(this.id + " " + this.getAttribute('title'));
 
         var mouse = d3.mouse(this);
         console.log(mouse);
@@ -257,18 +191,140 @@
           'top': mouse[1],
           'left': mouse[0]
         }).fadeIn('slow');
+
+          updateData();
       }
 
+        //>>>>>>>> SVG 2
+        // set the dimensions and margins of the graph
+        var margin = {top: 20, right: 20, bottom: 30, left: 50},
+            width = 540 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
+        // set the ranges
+        var x = d3.scaleLinear().range([0, width]);
+        var y = d3.scaleLinear().range([height, 0]);
+
+        // define the area
+        var area = d3.area()
+            .x(function(d) { return x(d.district); })
+            .y0(height)
+            .y1(function(d) { return y(d.percent); });
+
+        // define the line
+        var valueline = d3.line()
+            .x(function(d) { return x(d.district); })
+            .y(function(d) { return y(d.percent); });
+
+        // append the svg obgect to the body of the page
+        // appends a 'group' element to 'svg'
+        // moves the 'group' element to the top left margin
+
+        var svg2 = d3.select("#graphright").append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")");
+
+        // get the data
+        d3.csv("data.csv", function(error, data) {
+            if (error) throw error;
+
+            // scale the range of the data
+            x.domain(d3.extent(data, function (d) {
+                return d.district;
+            }));
+            y.domain([0, d3.max(data, function (d) {
+                return d.percent;
+            })]);
+
+            // add the area
+            svg2.append("graph")
+                .data([data])
+                .attr("width", 300)
+                .attr("height", 300)
+                .attr("class", "area")
+                .attr("d", area);
+
+            // add the valueline path.
+            svg2.append("path")
+                .data([data])
+                .attr("class", "line")
+                .attr("d", valueline);
+
+            // Add the X Axis
+            svg2.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x).ticks(10))
+                .selectAll("text")
+                .style("text-anchor", "end")
+                .attr("dx", "-.8em")
+                .attr("dy", ".15em")
+            //.attr("transform", "rotate(-65)");
+
+            // Add the Y Axis
+            svg2.append("g")
+                .attr("class", "axis")
+                .call(d3.axisLeft(y));
+
+        });
+        function updateData() {
+
+
+            // Get Current District(s)
+            var string = $('#textR').prop('outerHTML');
+            var id = string.substr(14, 2).replace(/\s/g,''); // ID of selected District
+
+            var erg = [];
+            // Get the data again
+            d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv", function(error, data) {
+
+                data.forEach(function(d) {
+                    
+                    // Array with Data and Years
+                    if(d.NUMMER == id && d.INDIKATOR_AUSPRAEGUNG != 'deutsch') {
+                        d.NUMMER = +d.NUMMER;
+                        var district = [d.NUMMER, d.JAHR];
+                        erg.push(district);
+                        console.log(d.NUMMER + " added to erg with year " + d.JAHR);
+                    }
+                });
+
+                // Scale the range of the data again
+                x.domain(d3.extent(data, function(d) { return d.date; }));
+                y.domain([0, d3.max(data, function(d) { return d.close; })]);
+
+                // Select the section we want to apply our changes to
+                var svg = d3.select("body").transition();
+
+                // Make the changes
+                svg.select(".line")   // change the line
+                    .duration(750)
+                    .attr("d", valueline(data));
+                svg.select(".x.axis") // change the x axis
+                    .duration(750)
+                    .call(xAxis);
+                svg.select(".y.axis") // change the y axis
+                    .duration(750)
+                    .call(yAxis);
+
+            });
+        }
+
+        //for Time
+        $("#sliderEle").on("change", function(event, ui) {
+            Console.log('u slided');
+        });
+
+        function nameFn(d) {
+            return d && d.properties ? d.properties.NOMBRE_DPT : null;
+        }
     });
 
-    //for Time
-    $("#sliderEle").on("change", function(event, ui) {
-      Console.log('u slided');
-    });
 
-    function nameFn(d) {
-      return d && d.properties ? d.properties.NOMBRE_DPT : null;
-    }
+
+
   </script>
 
   <div id="slidecontainer">
