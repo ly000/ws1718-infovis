@@ -22,6 +22,10 @@
     position: absolute; 
 }
 
+#detailed {
+    float:right;
+}
+
 .line {
     fill: none;
     stroke: steelblue;
