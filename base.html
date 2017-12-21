@@ -59,7 +59,7 @@
 
       //Initializing needed data
       var dataset = d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv");
-      var color = d3.scaleLinear().range(["blue", "red"]);
+      var color = d3.scaleLinear().range(["yellow", "red"]);
       var showValue = "INDIKATOR_WERT";
       var record = [];
       var width = 800;
@@ -76,25 +76,20 @@
         .attr("height", height)
         .append("g");
 
-      var color = d3.scaleLinear().range(["blue", "red"]);
-      var showValue= "INDIKATOR_WERT";
-      var record=[];
-
-
-
-        //Prepare datastructures
-      function addRecord(d){
-          d[showValue]=+d[showValue];
-          var obj = {key: d.NUMMER, value: d[showValue]};
-          record.push(obj);
-          return d;
-      }
-
-      d3.csv("data/preprocessing/test.csv", addRecord, function(error, data) {
+      //Prepare datastructures
+      d3.csv("data/preprocessing/primaryschool_ds.csv", addRecord, function(error, data) {
+        // sets colordomain for the given range
         color.domain(d3.extent(data, function(d) {
           return d[showValue];
         }));
       });
+
+      function addRecord(d){
+          d[showValue]=+d[showValue];
+          record.push(d);
+          // For further chaining of callbacks? Maybe?
+          return d;
+      }
 
       //Draw map + bind events
       d3.json("mucbezirke.geojson", function(error, mapData) {
@@ -124,7 +119,7 @@
 
       //Bind tooltip to map
       var tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
-        console.log(d.properties.name);
+        //console.log(d.properties.name);
         return d.properties.name;
       });
       svg.call(tip);
@@ -146,13 +141,11 @@
 
       function getColor(data) {
         var value = -1;
-        //console.log('datanummer' + data.properties.cartodb_id)
-        record.forEach(function(d) {
-          if (data.properties.nr == d.key) {
-            value = d.value;
-            return;
-          }
-        });
+
+        // Filter the correct id
+        value = record.filter(row => row.NUMMER == data.properties.nr);
+        // Get the mean-value of all years
+        value = d3.mean(value, function(d) { return d.INDIKATOR_WERT});
         if (value == -1) {
           return "none";
         }
