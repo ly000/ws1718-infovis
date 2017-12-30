@@ -285,7 +285,7 @@
         var values = [];
         // Get the data again
         d3.csv("data/preprocessing/primaryschool_ds.csv", function(error, data) {
-
+          console.log(data);
           data.forEach(function(d) {
             // Array with Data and Years
             if (d.NUMMER == id) {
@@ -298,19 +298,15 @@
 
           valueline = d3.line()
             .x(function(d) {
-              return x(years);
+              return x(d.NUMMER == id ? d.JAHR.toString() : '');
             })
             .y(function(d) {
-              return y(values);
+              return y(d.NUMMER == id ? d.INDIKATOR_WERT : '');
             });
 
           // Scale the range of the data again
-          x.domain(d3.extent(data, function(d) {
-            return years.length;
-          }));
-          y.domain([0, d3.max(data, function(d) {
-            return values.length;
-          })]);
+          x.domain([2007, 2014]);
+          y.domain([0, 35]);
 
           // Select the section we want to apply our changes to
           var svg2 = d3.select("#graphright").transition();
