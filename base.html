@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="http://rawgithub.com/Caged/d3-tip/master/examples/example-styles.css">
 </head>
 
-<body>
+<body style="background-color:powderblue;">
   <div id="test"> </div>
   <div id="wrapper">
     <div id="map"> </div>
@@ -198,25 +198,25 @@
         width = 540 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
       // set the ranges
-      var x = d3.scaleTime().range([0, width]);
-      var y = d3.scaleLinear().range([height, 0]);
+      var xScale = d3.scaleTime().range([0, width]);
+      var yScale = d3.scaleLinear().range([height, 0]);
 
       // define the area
       var area = d3.area()
         .x(function(d) {
-          return x(d.JAHR.toString());
+          return xScale(d.JAHR.toString());
         })
         .y(function(d) {
-          return y(d.INDIKATOR_WERT);
+          return yScale(d.INDIKATOR_WERT);
         });
 
       // define the line
       var valueline = d3.line()
         .x(function(d) {
-          return x(d.JAHR.toString());
+          return xScale(d.JAHR.toString());
         })
         .y(function(d) {
-          return y(d.INDIKATOR_WERT);
+          return yScale(d.INDIKATOR_WERT);
         });
 
       // append the svg obgect to the body of the page
@@ -235,10 +235,10 @@
         if (error) throw error;
 
         // scale the range of the data
-        x.domain(d3.extent(data, function(d) {
+        xScale.domain(d3.extent(data, function(d) {
           return d.JAHR.toString();
         }));
-        y.domain([0, d3.max(data, function(d) {
+        yScale.domain([0, d3.max(data, function(d) {
           return d.INDIKATOR_WERT;
         })]);
 
@@ -260,69 +260,50 @@
         svg2.append("g")
           .attr("class", "x axis")
           .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(x))
+          .call(d3.axisBottom(xScale).tickFormat(d3.format("d")))
           //.selectAll("text")
           .style("text-anchor", "end")
-        //.attr("dx", "-.8em")
-        //.attr("dy", ".15em")
-        //.attr("transform", "rotate(-65)");
 
         // Add the Y Axis
         svg2.append("g")
           .attr("class", "y axis")
-          .call(d3.axisLeft(y));
+          .call(d3.axisLeft(yScale));
 
       });
 
       function updateData() {
 
-
         // Get Current District(s)
         var string = $('#textR').prop('outerHTML');
         var id = string.substr(14, 2).replace(/\s/g, ''); // ID of selected District
+        var tmpRecord = record.filter(row => row.NUMMER == id);
 
-        var years = [];
-        var values = [];
         // Get the data again
-        d3.csv("data/preprocessing/primaryschool_ds.csv", function(error, data) {
-          console.log(data);
-          data.forEach(function(d) {
-            // Array with Data and Years
-            if (d.NUMMER == id) {
-              years.push(d.JAHR.toString());
-              values.push(d.INDIKATOR_WERT)
-              console.log(d.INDIKATOR_WERT + ' was added for year ' + d.JAHR)
-            }
+        valuesline = d3.line()
+          .x(function(d) {
+            return xScale(d.JAHR.toString());
+          })
+          .y(function(d) {
+            return yScale(d.INDIKATOR_WERT);
           });
-          // define the line
 
-          valueline = d3.line()
-            .x(function(d) {
-              return x(d.NUMMER == id ? d.JAHR.toString() : '');
-            })
-            .y(function(d) {
-              return y(d.NUMMER == id ? d.INDIKATOR_WERT : '');
-            });
+        // Scale the range of the data again
+        xScale.domain([2007, 2014]);
+        yScale.domain([0, 35]);
 
-          // Scale the range of the data again
-          x.domain([2007, 2014]);
-          y.domain([0, 35]);
+        // Select the section we want to apply our changes to
+        var svg2 = d3.select("#graphright").transition();
 
-          // Select the section we want to apply our changes to
-          var svg2 = d3.select("#graphright").transition();
-
-          // Make the changes
-          svg2.select(".line") // change the line
-            .duration(750)
-            .attr("d", valueline(data));
-          svg2.select(".x.axis") // change the x axis
-            .duration(750)
-            .call(d3.axisBottom(x));
-          svg2.select(".y.axis") // change the y axis
-            .duration(750)
-            .call(d3.axisLeft(y));
-
-        });
+        // Make the changes
+        svg2.select(".line") // change the line
+          .duration(750)
+          .attr("d", valuesline(tmpRecord));
+        svg2.select(".x.axis") // change the x axis
+          .duration(750)
+          .call(d3.axisBottom(xScale).tickFormat(d3.format("d")));
+        svg2.select(".y.axis") // change the y axis
+          .duration(750)
+          .call(d3.axisLeft(yScale));
       }
 
       //for Time
