@@ -175,8 +175,10 @@
 
         var mouse = d3.mouse(this);
         console.log(mouse);
-        $('#test').html("<div id='test'>" + this.getAttribute('title') + "</div>");
+        //$('#test').html("<div id='test'>" + this.getAttribute('title') + "</div>");
         //var text =
+        $('#test').empty();
+        $('#test').append("<img height='40' width='20' id='stick' src='stick1.png'/>");
 
         //$('body').append(text);
         $('#test').css({
