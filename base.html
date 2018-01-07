@@ -235,12 +235,8 @@
         if (error) throw error;
 
         // scale the range of the data
-        xScale.domain(d3.extent(data, function(d) {
-          return d.JAHR.toString();
-        }));
-        yScale.domain([0, d3.max(data, function(d) {
-          return d.INDIKATOR_WERT;
-        })]);
+        xScale.domain([2007, 2014]);
+        yScale.domain([0, 35]);
 
         // add the area
         svg2.append("graph")
