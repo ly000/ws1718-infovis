@@ -7,14 +7,27 @@
     border: 1px solid red;
     float:left;
 }
-#slider {
+#sliderEle {
     border: 1px solid green;
-    float:right;
+    float:left;
+    width: 300px;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    cursor: pointer;
 }
+#sliderEle:hover {
+    opacity: 1;
+}
+
 
 #sideRight {
     border: 1px solid blue;
     float:left;
+}
+
+#sliderText {
+    float: left;
 }
 
 #test {
