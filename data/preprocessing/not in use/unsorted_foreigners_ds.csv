@@ -1,0 +1,209 @@
+NUMMER,INDIKATOR_BEZEICHNUNG,INDIKATOR_AUSPRAEGUNG,INDIKATOR_WERT,BASISWERT_1,BASISWERT_2,NAME_BASISWERT1,NAME_BASISWERT2,JAHR,GLIEDERUNG,NAME
+#100,Ausländer_innenanteil,gesamt,24.6,353816,1439474,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Gesamtstadt,Stadt München
+#100,Ausländer_innenanteil,gesamt,25.4,372801,1464962,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Gesamtstadt,Stadt München
+#100,Ausländer_innenanteil,gesamt,23.0,311321,1351445,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Gesamtstadt,Stadt München
+#100,Ausländer_innenanteil,gesamt,23.1,315924,1367314,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Gesamtstadt,Stadt München
+#100,Ausländer_innenanteil,gesamt,26.4,393372,1490681,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Gesamtstadt,Stadt München
+#100,Ausländer_innenanteil,gesamt,23.0,317454,1382273,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Gesamtstadt,Stadt München
+#100,Ausländer_innenanteil,gesamt,22.6,308569,1364194,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Gesamtstadt,Stadt München
+#100,Ausländer_innenanteil,gesamt,23.7,334735,1410741,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Gesamtstadt,Stadt München
+1,Ausländer_innenanteil,gesamt,22.3,4290,19228,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,01 Altstadt - Lehel
+1,Ausländer_innenanteil,gesamt,24.7,5053,20422,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,01 Altstadt - Lehel
+1,Ausländer_innenanteil,gesamt,22.5,4386,19505,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,01 Altstadt - Lehel
+1,Ausländer_innenanteil,gesamt,21.0,4039,19207,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,01 Altstadt - Lehel
+1,Ausländer_innenanteil,gesamt,25.8,5371,20806,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,01 Altstadt - Lehel
+1,Ausländer_innenanteil,gesamt,23.6,4729,20048,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,01 Altstadt - Lehel
+1,Ausländer_innenanteil,gesamt,22.1,4356,19707,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,01 Altstadt - Lehel
+1,Ausländer_innenanteil,gesamt,20.7,3925,18932,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,01 Altstadt - Lehel
+10,Ausländer_innenanteil,gesamt,28.7,14805,51537,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,10 Moosach
+10,Ausländer_innenanteil,gesamt,26.0,12679,48692,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,10 Moosach
+10,Ausländer_innenanteil,gesamt,26.0,12567,48421,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,10 Moosach
+10,Ausländer_innenanteil,gesamt,25.5,12352,48451,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,10 Moosach
+10,Ausländer_innenanteil,gesamt,27.9,14038,50253,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,10 Moosach
+10,Ausländer_innenanteil,gesamt,29.6,15606,52657,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,10 Moosach
+10,Ausländer_innenanteil,gesamt,25.2,12192,48306,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,10 Moosach
+10,Ausländer_innenanteil,gesamt,27.2,13418,49384,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,10 Moosach
+11,Ausländer_innenanteil,gesamt,38.4,28243,73617,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Ausländer_innenanteil,gesamt,35.3,24105,68198,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Ausländer_innenanteil,gesamt,35.2,23903,67864,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Ausländer_innenanteil,gesamt,36.2,25517,70470,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Ausländer_innenanteil,gesamt,34.8,23683,68023,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Ausländer_innenanteil,gesamt,35.3,24373,68970,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Ausländer_innenanteil,gesamt,39.2,29253,74667,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,11 Milbertshofen - Am Hart
+11,Ausländer_innenanteil,gesamt,37.5,27197,72506,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,11 Milbertshofen - Am Hart
+12,Ausländer_innenanteil,gesamt,23.3,15521,66706,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,12 Schwabing - Freimann
+12,Ausländer_innenanteil,gesamt,22.0,14013,63720,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,12 Schwabing - Freimann
+12,Ausländer_innenanteil,gesamt,22.8,14542,63832,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,12 Schwabing - Freimann
+12,Ausländer_innenanteil,gesamt,22.7,14581,64350,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,12 Schwabing - Freimann
+12,Ausländer_innenanteil,gesamt,22.5,14672,65158,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,12 Schwabing - Freimann
+12,Ausländer_innenanteil,gesamt,25.4,17687,69676,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,12 Schwabing - Freimann
+12,Ausländer_innenanteil,gesamt,24.2,16605,68530,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,12 Schwabing - Freimann
+12,Ausländer_innenanteil,gesamt,27.3,19608,71802,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,12 Schwabing - Freimann
+13,Ausländer_innenanteil,gesamt,17.8,13628,76684,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,13 Bogenhausen
+13,Ausländer_innenanteil,gesamt,18.3,14097,77112,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,13 Bogenhausen
+13,Ausländer_innenanteil,gesamt,20.9,17126,82138,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,13 Bogenhausen
+13,Ausländer_innenanteil,gesamt,18.0,13987,77542,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,13 Bogenhausen
+13,Ausländer_innenanteil,gesamt,21.8,18286,83900,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,13 Bogenhausen
+13,Ausländer_innenanteil,gesamt,18.1,13892,76709,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,13 Bogenhausen
+13,Ausländer_innenanteil,gesamt,20.0,16166,80816,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,13 Bogenhausen
+13,Ausländer_innenanteil,gesamt,18.8,14913,79175,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,13 Bogenhausen
+14,Ausländer_innenanteil,gesamt,26.8,10746,40038,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,14 Berg am Laim
+14,Ausländer_innenanteil,gesamt,28.2,11933,42310,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,14 Berg am Laim
+14,Ausländer_innenanteil,gesamt,28.9,12433,43068,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,14 Berg am Laim
+14,Ausländer_innenanteil,gesamt,26.4,10521,39783,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,14 Berg am Laim
+14,Ausländer_innenanteil,gesamt,27.0,10960,40550,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,14 Berg am Laim
+14,Ausländer_innenanteil,gesamt,27.5,11358,41342,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,14 Berg am Laim
+14,Ausländer_innenanteil,gesamt,29.9,13141,44022,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,14 Berg am Laim
+14,Ausländer_innenanteil,gesamt,26.6,10579,39787,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,14 Berg am Laim
+15,Ausländer_innenanteil,gesamt,17.7,11078,62756,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,15 Trudering - Riem
+15,Ausländer_innenanteil,gesamt,16.7,9876,59031,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,15 Trudering - Riem
+15,Ausländer_innenanteil,gesamt,17.0,10321,60879,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,15 Trudering - Riem
+15,Ausländer_innenanteil,gesamt,18.7,12173,64983,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,15 Trudering - Riem
+15,Ausländer_innenanteil,gesamt,18.9,12466,65869,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,15 Trudering - Riem
+15,Ausländer_innenanteil,gesamt,16.3,9223,56487,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,15 Trudering - Riem
+15,Ausländer_innenanteil,gesamt,20.2,13747,68063,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,15 Trudering - Riem
+15,Ausländer_innenanteil,gesamt,19.4,13023,67009,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,15 Trudering - Riem
+16,Ausländer_innenanteil,gesamt,31.5,34699,110099,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,16 Ramersdorf - Perlach
+16,Ausländer_innenanteil,gesamt,27.1,28005,103447,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,16 Ramersdorf - Perlach
+16,Ausländer_innenanteil,gesamt,30.4,32946,108244,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,16 Ramersdorf - Perlach
+16,Ausländer_innenanteil,gesamt,27.3,28340,103732,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,16 Ramersdorf - Perlach
+16,Ausländer_innenanteil,gesamt,28.8,30494,105900,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,16 Ramersdorf - Perlach
+16,Ausländer_innenanteil,gesamt,29.7,31778,107164,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,16 Ramersdorf - Perlach
+16,Ausländer_innenanteil,gesamt,28.0,29308,104737,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,16 Ramersdorf - Perlach
+16,Ausländer_innenanteil,gesamt,27.5,28602,104089,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,16 Ramersdorf - Perlach
+17,Ausländer_innenanteil,gesamt,30.1,15858,52743,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Ausländer_innenanteil,gesamt,29.1,14909,51183,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Ausländer_innenanteil,gesamt,29.2,15047,51499,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Ausländer_innenanteil,gesamt,28.6,14509,50656,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Ausländer_innenanteil,gesamt,27.9,13665,49030,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Ausländer_innenanteil,gesamt,27.5,13153,47791,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Ausländer_innenanteil,gesamt,27.7,13394,48282,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,17 Obergiesing - Fasangarten
+17,Ausländer_innenanteil,gesamt,27.7,13407,48425,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,17 Obergiesing - Fasangarten
+18,Ausländer_innenanteil,gesamt,19.3,9574,49502,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,18 Untergiesing - Harlaching
+18,Ausländer_innenanteil,gesamt,20.2,10179,50455,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,18 Untergiesing - Harlaching
+18,Ausländer_innenanteil,gesamt,19.8,9765,49391,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,18 Untergiesing - Harlaching
+18,Ausländer_innenanteil,gesamt,19.7,9659,48990,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,18 Untergiesing - Harlaching
+18,Ausländer_innenanteil,gesamt,18.9,9263,48911,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,18 Untergiesing - Harlaching
+18,Ausländer_innenanteil,gesamt,22.6,11839,52452,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,18 Untergiesing - Harlaching
+18,Ausländer_innenanteil,gesamt,20.8,10649,51180,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,18 Untergiesing - Harlaching
+18,Ausländer_innenanteil,gesamt,21.9,11400,51937,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,18 Untergiesing - Harlaching
+19,Ausländer_innenanteil,gesamt,19.0,15647,82482,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Ausländer_innenanteil,gesamt,21.7,18895,87271,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Ausländer_innenanteil,gesamt,19.3,15964,82771,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Ausländer_innenanteil,gesamt,19.3,15849,82283,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Ausländer_innenanteil,gesamt,20.9,17844,85468,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Ausländer_innenanteil,gesamt,23.8,21642,90790,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Ausländer_innenanteil,gesamt,23.8,21777,91412,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+19,Ausländer_innenanteil,gesamt,19.7,16467,83584,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,19 Thalkirchen - Obersendling - Forstenried - Fürstenried - Solln
+2,Ausländer_innenanteil,gesamt,27.6,12824,46520,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Ausländer_innenanteil,gesamt,25.7,11944,46446,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Ausländer_innenanteil,gesamt,26.2,12614,48231,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Ausländer_innenanteil,gesamt,27.4,13042,47599,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Ausländer_innenanteil,gesamt,25.9,12255,47357,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Ausländer_innenanteil,gesamt,28.3,14346,50620,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Ausländer_innenanteil,gesamt,30.2,15778,52177,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+2,Ausländer_innenanteil,gesamt,27.4,13604,49657,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,02 Ludwigsvorstadt - Isarvorstadt
+20,Ausländer_innenanteil,gesamt,21.4,9947,46385,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,20 Hadern
+20,Ausländer_innenanteil,gesamt,21.5,9973,46490,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,20 Hadern
+20,Ausländer_innenanteil,gesamt,21.2,9744,46059,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,20 Hadern
+20,Ausländer_innenanteil,gesamt,22.0,10419,47459,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,20 Hadern
+20,Ausländer_innenanteil,gesamt,22.8,10914,47949,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,20 Hadern
+20,Ausländer_innenanteil,gesamt,21.5,10076,46851,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,20 Hadern
+20,Ausländer_innenanteil,gesamt,23.9,11715,48945,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,20 Hadern
+20,Ausländer_innenanteil,gesamt,25.2,12587,49874,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,20 Hadern
+21,Ausländer_innenanteil,gesamt,16.9,11025,65290,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,21 Pasing - Obermenzing
+21,Ausländer_innenanteil,gesamt,17.1,11067,64773,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,21 Pasing - Obermenzing
+21,Ausländer_innenanteil,gesamt,17.7,12014,67878,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,21 Pasing - Obermenzing
+21,Ausländer_innenanteil,gesamt,20.5,14754,71880,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,21 Pasing - Obermenzing
+21,Ausländer_innenanteil,gesamt,19.5,13822,70783,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,21 Pasing - Obermenzing
+21,Ausländer_innenanteil,gesamt,18.6,12882,69295,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,21 Pasing - Obermenzing
+21,Ausländer_innenanteil,gesamt,16.5,10792,65279,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,21 Pasing - Obermenzing
+21,Ausländer_innenanteil,gesamt,16.9,11221,66244,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,21 Pasing - Obermenzing
+22,Ausländer_innenanteil,gesamt,18.7,7157,38268,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Ausländer_innenanteil,gesamt,18.8,7213,38327,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Ausländer_innenanteil,gesamt,19.5,7574,38863,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Ausländer_innenanteil,gesamt,22.3,9435,42305,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Ausländer_innenanteil,gesamt,18.6,7082,38091,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Ausländer_innenanteil,gesamt,23.3,9996,42859,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Ausländer_innenanteil,gesamt,21.4,8806,41116,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+22,Ausländer_innenanteil,gesamt,20.3,8078,39789,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,22 Aubing - Lochhausen - Langwied
+23,Ausländer_innenanteil,gesamt,19.5,6116,31353,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,23 Allach - Untermenzing
+23,Ausländer_innenanteil,gesamt,18.4,5653,30737,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,23 Allach - Untermenzing
+23,Ausländer_innenanteil,gesamt,16.1,4646,28796,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,23 Allach - Untermenzing
+23,Ausländer_innenanteil,gesamt,17.8,5396,30393,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,23 Allach - Untermenzing
+23,Ausländer_innenanteil,gesamt,16.6,4933,29693,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,23 Allach - Untermenzing
+23,Ausländer_innenanteil,gesamt,16.1,4540,28165,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,23 Allach - Untermenzing
+23,Ausländer_innenanteil,gesamt,15.6,4480,28732,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,23 Allach - Untermenzing
+23,Ausländer_innenanteil,gesamt,15.9,4639,29161,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,23 Allach - Untermenzing
+24,Ausländer_innenanteil,gesamt,26.6,14780,55667,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Ausländer_innenanteil,gesamt,25.9,14265,55180,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Ausländer_innenanteil,gesamt,26.4,14642,55475,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Ausländer_innenanteil,gesamt,28.4,16556,58245,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Ausländer_innenanteil,gesamt,27.4,15689,57183,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Ausländer_innenanteil,gesamt,30.4,18347,60262,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Ausländer_innenanteil,gesamt,26.8,15015,56130,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,24 Feldmoching - Hasenbergl
+24,Ausländer_innenanteil,gesamt,29.5,17522,59391,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,24 Feldmoching - Hasenbergl
+25,Ausländer_innenanteil,gesamt,21.5,11059,51338,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,25 Laim
+25,Ausländer_innenanteil,gesamt,24.8,13392,54030,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,25 Laim
+25,Ausländer_innenanteil,gesamt,21.8,11010,50600,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,25 Laim
+25,Ausländer_innenanteil,gesamt,22.8,12009,52733,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,25 Laim
+25,Ausländer_innenanteil,gesamt,21.8,11209,51329,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,25 Laim
+25,Ausländer_innenanteil,gesamt,25.7,14049,54714,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,25 Laim
+25,Ausländer_innenanteil,gesamt,23.8,12675,53359,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,25 Laim
+25,Ausländer_innenanteil,gesamt,21.9,11356,51805,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,25 Laim
+3,Ausländer_innenanteil,gesamt,24.9,12878,51642,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,03 Maxvorstadt
+3,Ausländer_innenanteil,gesamt,23.3,11111,47711,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,03 Maxvorstadt
+3,Ausländer_innenanteil,gesamt,22.2,10865,48875,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,03 Maxvorstadt
+3,Ausländer_innenanteil,gesamt,26.0,13671,52575,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,03 Maxvorstadt
+3,Ausländer_innenanteil,gesamt,22.4,10888,48619,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,03 Maxvorstadt
+3,Ausländer_innenanteil,gesamt,22.9,11356,49498,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,03 Maxvorstadt
+3,Ausländer_innenanteil,gesamt,23.1,11304,48884,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,03 Maxvorstadt
+3,Ausländer_innenanteil,gesamt,24.0,12225,50877,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,03 Maxvorstadt
+4,Ausländer_innenanteil,gesamt,19.6,12181,62028,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,04 Schwabing - West
+4,Ausländer_innenanteil,gesamt,19.9,12481,62856,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,04 Schwabing - West
+4,Ausländer_innenanteil,gesamt,21.4,14115,65892,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,04 Schwabing - West
+4,Ausländer_innenanteil,gesamt,20.2,12635,62541,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,04 Schwabing - West
+4,Ausländer_innenanteil,gesamt,20.2,12882,63644,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,04 Schwabing - West
+4,Ausländer_innenanteil,gesamt,20.8,13462,64768,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,04 Schwabing - West
+4,Ausländer_innenanteil,gesamt,20.6,12653,61514,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,04 Schwabing - West
+4,Ausländer_innenanteil,gesamt,22.3,14959,67094,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,04 Schwabing - West
+5,Ausländer_innenanteil,gesamt,22.2,12247,55288,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,05 Au - Haidhausen
+5,Ausländer_innenanteil,gesamt,21.9,12247,55853,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,05 Au - Haidhausen
+5,Ausländer_innenanteil,gesamt,23.4,14225,60756,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,05 Au - Haidhausen
+5,Ausländer_innenanteil,gesamt,21.7,12423,57297,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,05 Au - Haidhausen
+5,Ausländer_innenanteil,gesamt,22.8,13629,59752,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,05 Au - Haidhausen
+5,Ausländer_innenanteil,gesamt,22.2,13049,58881,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,05 Au - Haidhausen
+5,Ausländer_innenanteil,gesamt,21.2,11968,56322,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,05 Au - Haidhausen
+5,Ausländer_innenanteil,gesamt,21.2,11765,55590,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,05 Au - Haidhausen
+6,Ausländer_innenanteil,gesamt,25.7,9732,37940,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,06 Sendling
+6,Ausländer_innenanteil,gesamt,26.7,10810,40422,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,06 Sendling
+6,Ausländer_innenanteil,gesamt,25.4,9730,38335,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,06 Sendling
+6,Ausländer_innenanteil,gesamt,26.0,10386,39953,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,06 Sendling
+6,Ausländer_innenanteil,gesamt,24.2,9344,38567,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,06 Sendling
+6,Ausländer_innenanteil,gesamt,24.8,9678,39002,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,06 Sendling
+6,Ausländer_innenanteil,gesamt,25.5,10088,39567,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,06 Sendling
+6,Ausländer_innenanteil,gesamt,24.3,9250,38112,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,06 Sendling
+7,Ausländer_innenanteil,gesamt,23.3,12220,52495,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,07 Sendling - Westpark
+7,Ausländer_innenanteil,gesamt,23.0,12011,52257,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,07 Sendling - Westpark
+7,Ausländer_innenanteil,gesamt,22.7,11825,52185,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,07 Sendling - Westpark
+7,Ausländer_innenanteil,gesamt,22.9,11830,51745,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,07 Sendling - Westpark
+7,Ausländer_innenanteil,gesamt,27.2,15354,56485,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,07 Sendling - Westpark
+7,Ausländer_innenanteil,gesamt,26.1,14445,55405,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,07 Sendling - Westpark
+7,Ausländer_innenanteil,gesamt,24.2,12907,53271,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,07 Sendling - Westpark
+7,Ausländer_innenanteil,gesamt,25.4,13829,54552,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,07 Sendling - Westpark
+8,Ausländer_innenanteil,gesamt,33.5,9603,28678,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,08 Schwanthalerhöhe
+8,Ausländer_innenanteil,gesamt,33.6,9974,29663,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,08 Schwanthalerhöhe
+8,Ausländer_innenanteil,gesamt,35.3,9491,26877,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,08 Schwanthalerhöhe
+8,Ausländer_innenanteil,gesamt,34.0,10230,30083,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,08 Schwanthalerhöhe
+8,Ausländer_innenanteil,gesamt,33.6,9358,27814,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,08 Schwanthalerhöhe
+8,Ausländer_innenanteil,gesamt,35.3,9819,27778,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,08 Schwanthalerhöhe
+8,Ausländer_innenanteil,gesamt,33.4,9814,29402,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,08 Schwanthalerhöhe
+8,Ausländer_innenanteil,gesamt,33.2,9286,28004,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,08 Schwanthalerhöhe
+9,Ausländer_innenanteil,gesamt,21.5,19848,92139,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2011,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Ausländer_innenanteil,gesamt,23.0,22083,95906,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2013,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Ausländer_innenanteil,gesamt,21.2,18436,87043,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2008,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Ausländer_innenanteil,gesamt,23.9,23309,97521,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2014,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Ausländer_innenanteil,gesamt,21.1,18118,85964,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2007,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Ausländer_innenanteil,gesamt,20.7,18464,89286,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2010,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Ausländer_innenanteil,gesamt,22.4,21126,94257,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2012,Stadtbezirk,09 Neuhausen - Nymphenburg
+9,Ausländer_innenanteil,gesamt,20.7,18147,87846,Anzahl aller ausländischen Einwohner,Anzahl der gesamten Hauptwohnsitzbevölkerung,2009,Stadtbezirk,09 Neuhausen - Nymphenburg
