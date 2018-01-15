@@ -39,6 +39,10 @@
     float:right;
 }
 
+#left {
+    float:left;
+}
+
 .line {
     fill: none;
     stroke: steelblue;
