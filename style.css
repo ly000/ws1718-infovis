@@ -1,14 +1,11 @@
 #wrapper {
     width: 1300px;
-    border: 1px solid black;
 }
 #map {
     width: 700px;
-    border: 1px solid red;
     float:left;
 }
 #sliderEle {
-    border: 1px solid green;
     float:left;
     width: 300px;
     opacity: 0.3;
@@ -22,7 +19,6 @@
 
 
 #sideRight {
-    border: 1px solid blue;
     float:left;
 }
 
@@ -31,7 +27,6 @@
 }
 
 #test {
-    border: 1px solid orange;
     position: absolute; 
 }
 
