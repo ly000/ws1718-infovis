@@ -24,7 +24,7 @@
           Intensity of Color: Percentage of foreigners<br> Number of Stickmen: Average children per household<br> Placeholder: Average rent in sqm
         </fieldset>
       </form>
-      <b id="sliderText"> 2007 </b> 
+      <b id="sliderText"> 2007 </b>
       <input type="range" min="2007" max="2014" value="1" class="slider" id="sliderEle">
 
     </div>
@@ -47,12 +47,13 @@
       //Grundschuldaten
 
       //Initializing needed data
-      var dataset = d3.csv("data/preprocessing/Dataset_01_Grundschueler_sortbyID.csv");
       var color = d3.scaleLinear().range(["yellow", "red"]);
       var showValue = "INDIKATOR_WERT";
       var record = [];
       var width = 800;
       var height = 600;
+      var timeInterval = [2007, 2014];
+      var selectedTime = 0;
 
       var projection = d3.geoMercator()
         .scale(110000)
@@ -161,7 +162,7 @@
         });
 
         $('#test').empty();
-        $('#test').append("<img height='40' width='20' id='stick' src='stick1.png'/> " 
+        $('#test').append("<img height='40' width='20' id='stick' src='stick1.png'/> "
         + value.toFixed(2) + "% Anteil nicht-deutscher Grundschueler") ;
 
         //$('body').append(text);
@@ -170,7 +171,7 @@
         //   'left': mouse[0]
         // }).fadeIn('slow');
 
-       
+
         $('#test').css({
           'top': 550,
           'left': 20
@@ -294,10 +295,31 @@
           .call(d3.axisLeft(yScale));
       }
 
+      function updateColor(){
+        var value = -1;
+
+        // Filter the correct id
+        value = record.filter(row => row.NUMMER == this.id);
+        value = value.filter(row => row.JAHR == selectedTime);
+        // Get the mean-value of all years
+        value = d3.mean(value, function(d) {
+          return d.INDIKATOR_WERT
+        });
+        if (value == -1) {
+          return "none";
+        }
+        return color(value);
+      }
+
       //for Time
       $("#sliderEle").on("change  ", function(event, ui) {
         $('#sliderText').text(this.value);
         console.log(this.value);
+        selectedTime = +this.value;
+        svg.selectAll("path")
+          .transition()
+          .style('fill', updateColor);
+
       });
 
 
