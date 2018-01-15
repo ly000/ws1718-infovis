@@ -24,14 +24,16 @@
           Intensity of Color: Percentage of foreigners<br> Number of Stickmen: Average children per household<br> Placeholder: Average rent in sqm
         </fieldset>
       </form>
-      <b id="sliderText"> 2007 </b>
-      <input type="range" min="2007" max="2014" value="1" class="slider" id="sliderEle">
+      <b id="sliderText"> All Time </b>
+      <input type="range" min="2007" max="2014" value="-1" class="slider" id="sliderEle">
+      <input type="checkbox" checked="yes" id="checkbox"> Lie Factor
+
 
     </div>
   </div>
 
   <div id="sideRight">
-    <div id="textright"> <b id="textR"> Here is some flavortext</b>
+    <div id="textright"> <b id="textR"> All Time Development</b>
       <div id="detailed">
         <input name="updateButton" type="button" value="Update" onclick="updateData()" />
       </div>
@@ -321,11 +323,25 @@
           .style('fill', updateColor);
 
       });
+      
+
+      $('#myform :checkbox').change(function() {
+      // this will contain a reference to the checkbox   
+        if (this.checked) {
+          // the checkbox is now checked Sorry long i failed.
+        } else {
+          // the checkbox is now no longer checked
+        }
+      });
+
+
 
 
       function nameFn(d) {
         return d && d.properties ? d.properties.NOMBRE_DPT : null;
       }
+
+      
     });
 
 
