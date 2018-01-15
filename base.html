@@ -191,8 +191,8 @@
         var result = '';
         var repeat = 0;
         var repeat2= 0;
-        repeat = anteil / 100;
-        repeat2 = total / 100;
+        repeat = Math.round(anteil / 100);
+        repeat2 = Math.round(total / 100);
 
         for(var i=0; i<repeat; i++) {
           result += "<img height='20' width='10' id='stick' src='stick1.png'/> ";
