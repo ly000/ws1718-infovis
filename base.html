@@ -24,18 +24,19 @@
           Intensity of Color: Percentage of foreigners<br> Number of Stickmen: Average children per household<br> Placeholder: Average rent in sqm
         </fieldset>
       </form>
-      <b id="sliderText"> All Time </b>
+      <b id="sliderText"> Total </b>
       <input type="range" min="2007" max="2014" value="-1" class="slider" id="sliderEle">
-      <input type="checkbox" checked="yes" id="checkbox"> Lie Factor
-
-
+    </div>
+    <div id="left">
+        <input type="checkbox" checked="yes" id="checkbox"> Lie Factor
+        <input name="updateButton" type="button" value="Reset All" onclick="resetAll()" id="resetButton" />
     </div>
   </div>
 
   <div id="sideRight">
     <div id="textright"> <b id="textR"> All Time Development</b>
       <div id="detailed">
-        <input name="updateButton" type="button" value="Update" onclick="updateData()" />
+
       </div>
     </div>
 
@@ -355,7 +356,12 @@
         return d && d.properties ? d.properties.NOMBRE_DPT : null;
       }
 
-
+      function resetAll() {
+        //todo
+        svg.selectAll("path")
+          .transition()
+          .style('fill', getColor);
+      }
     });
 
 
