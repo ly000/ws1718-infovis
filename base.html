@@ -16,23 +16,22 @@
 <body style="background-color:powderblue;">
   <div id="test"> </div>
   <div id="wrapper">
+    <div id="empty">
+        <b id="sliderText"> Total </b>
+        <input type="range" min="2007" max="2014" value="-1" class="slider" id="sliderEle">
+        <div id="left">
+            <input type="checkbox" checked="yes" id="checkbox"> Lie Factor
+            <input name="updateButton" type="button" value="Reset All" id="resetButton" />
+        </div>
+        <form>
+            <fieldset id='legendContainer'>
+              <legend>Legend</legend>
+              
+            </fieldset>
+          </form>
+    </div>
     <div id="map"> </div>
-    <div id="sliderDiv">
-      <form>
-        <fieldset id='legendContainer'>
-          <legend>Legend</legend>
-          
-        </fieldset>
-      </form>
-      <b id="sliderText"> Total </b>
-      <input type="range" min="2007" max="2014" value="-1" class="slider" id="sliderEle">
-    </div>
-    <div id="left">
-        <input type="checkbox" checked="yes" id="checkbox"> Lie Factor
-        <input name="updateButton" type="button" value="Reset All" id="resetButton" />
-    </div>
   </div>
-
   <div id="sideRight">
     <div id="textright"> <b id="textR"> All Time Development</b>
       <div id="detailed">
@@ -218,7 +217,7 @@
         ) 
 
         $('#test').css({
-          'top': 560,
+          'top': 590,
           'left': 20
         }).fadeIn('slow');
       }
@@ -490,7 +489,7 @@
         //todo
         console.log('Reset pressed');
         updateData();
-
+        $("#textR").html('<b>All Time Development</b>'); 
         $('#sliderText').text('Total');
         $('#test').empty();
         selectedTime = 0;

@@ -1,5 +1,8 @@
 #wrapper {
-    width: 1300px;
+    width: 1250px;
+}
+#empty {
+    height: 40px;
 }
 #map {
     width: 700px;
@@ -7,7 +10,7 @@
 }
 #sliderEle {
     float:left;
-    width: 300px;
+    width: 450px;
     opacity: 0.3;
     -webkit-transition: .2s;
     transition: opacity .2s;
@@ -15,6 +18,10 @@
 }
 #sliderEle:hover {
     opacity: 1;
+}
+
+#legendContainer {
+    float:right;
 }
 
 
@@ -28,14 +35,6 @@
 
 #test {
     position: absolute; 
-}
-
-#detailed {
-    float:right;
-}
-
-#left {
-    float:left;
 }
 
 .line {
