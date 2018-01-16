@@ -19,9 +19,9 @@
     <div id="map"> </div>
     <div id="sliderDiv">
       <form>
-        <fieldset>
-          <legend>Static Legend (per district)</legend>
-          Intensity of Color: Percentage of foreigners<br> Number of Stickmen: Average children per household<br> Placeholder: Average rent in sqm
+        <fieldset id='legendContainer'>
+          <legend>Legend</legend>
+          
         </fieldset>
       </form>
       <b id="sliderText"> Total </b>
@@ -57,6 +57,7 @@
       var height = 600;
       var timeInterval = [2007, 2014];
       var selectedTime = 0;
+      var currentDomain = [0,100];
 
       var projection = d3.geoMercator()
         .scale(110000)
@@ -68,13 +69,19 @@
         .attr("width", width)
         .attr("height", height)
         .append("g");
-
+      
       //Prepare datastructures
       d3.csv("data/preprocessing/primaryschool_ds.csv", addRecord, function(error, data) {
         // sets colordomain for the given range
         color.domain(d3.extent(data, function(d) {
           return d[showValue];
         }));
+
+        currentDomain=d3.extent(data, function(d) {
+          return d[showValue];
+        });
+
+        console.log(currentDomain);
       });
 
       function addRecord(d) {
@@ -109,6 +116,30 @@
           .on('mouseout', handleMouseout)
           .on('click', click);
       });
+            
+      var legendWidth = width * 0.6, legendHeight = 10;
+      var offset = 10;
+      
+      var legend = d3.select('#legendContainer').append('svg')
+        .attr("width", legendWidth+2*offset)
+        .attr("height", 50)
+        .attr('id', 'legendscale')
+	      .attr("class", "legendWrapper");
+                
+      var defs = legend.append("defs");
+
+      //Append a linearGradient element to the defs and give it a unique id
+      var linearGradient = defs.append("linearGradient")
+          .attr("id", "linear-gradient");
+
+      //Horizontal gradient
+      linearGradient
+          .attr("x1", "0%")
+          .attr("y1", "0%")
+          .attr("x2", "100%")
+          .attr("y2", "0%");
+
+      updateLegend();
 
       //Bind tooltip to map
       var tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
@@ -250,40 +281,40 @@
         .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-      // get the data
-      d3.csv("data.csv", function(error, data) {
-        if (error) throw error;
+        // get the data
+        d3.csv("data.csv", function(error, data) {
+          if (error) throw error;
 
-        // scale the range of the data
-        xScale.domain([2007, 2014]);
-        yScale.domain([0, 35]);
+          // scale the range of the data
+          xScale.domain([2007, 2014]);
+          yScale.domain([0, 35]);
 
-        // add the area
-        svg2.append("graph")
-          .data([data])
-          .attr("width", 300)
-          .attr("height", 300)
-          .attr("class", "area")
-          .attr("d", area);
+          // add the area
+          svg2.append("graph")
+            .data([data])
+            .attr("width", 300)
+            .attr("height", 300)
+            .attr("class", "area")
+            .attr("d", area);
 
-        // add the valueline path.
-        svg2.append("path")
-          .data([data])
-          .attr("class", "line")
-          .attr("d", valueline);
+          // add the valueline path.
+          svg2.append("path")
+            .data([data])
+            .attr("class", "line")
+            .attr("d", valueline);
 
-        // Add the X Axis
-        svg2.append("g")
-          .attr("class", "x axis")
-          .attr("transform", "translate(0," + height + ")")
-          .call(d3.axisBottom(xScale).tickFormat(d3.format("d")))
-          //.selectAll("text")
-          .style("text-anchor", "end")
+          // Add the X Axis
+          svg2.append("g")
+            .attr("class", "x axis")
+            .attr("transform", "translate(0," + height + ")")
+            .call(d3.axisBottom(xScale).tickFormat(d3.format("d")))
+            //.selectAll("text")
+            .style("text-anchor", "end")
 
-        // Add the Y Axis
-        svg2.append("g")
-          .attr("class", "y axis")
-          .call(d3.axisLeft(yScale));
+          // Add the Y Axis
+          svg2.append("g")
+            .attr("class", "y axis")
+            .call(d3.axisLeft(yScale));
 
       });
 
@@ -324,8 +355,6 @@
 
       //TODO
       function resetGraph() {
-        d3.csv("data.csv", function(error, data) {
-          if (error) throw error;
   
           valuesline = d3.line()
           .x(function(d) {
@@ -351,11 +380,47 @@
           .call(d3.axisBottom(xScale).tickFormat(d3.format("d")));
         svg2.select(".y.axis") // change the y axis
           .duration(750)
-          .call(d3.axisLeft(yScale));
-  
-        });
+          .call(d3.axisLeft(yScale));    
+      }
 
-      
+      function updateLegend(){
+      //Append multiple color stops by using D3's data/enter step
+      linearGradient.selectAll("stop") 
+          .data( color.range() )                  
+          .enter().append("stop")
+          .attr("offset", function(d,i) { return i/(color.range().length-1); })
+          .attr("stop-color", function(d) { return d; });
+
+      //Draw the rectangle and fill with gradient
+      legend.append("rect")
+        .attr('x', offset)
+        .attr("y", 20)
+        .attr("width", legendWidth)
+        .attr("height", legendHeight)
+        .style("fill", "url(#linear-gradient)");
+
+      //Set scale for x-axis
+      var legendXScale = d3.scaleLinear()
+        .range([0, legendWidth])
+        .domain(currentDomain);
+        //.domain([d3.min(pt.legendSOM.colorData)/100, d3.max(pt.legendSOM.colorData)/100]);
+
+      //Define x-axis
+      var xAxis = d3.axisBottom(legendXScale)
+          .ticks();
+
+      //Append title
+      legend.append("text")
+        .attr("class", "legendTitle")
+        .attr('x', offset)
+        .attr("y", 15)
+        .text("Prozent der Nicht-deutschen Grundschueler");
+
+      //Set up X axis
+      legend.append("g")
+        .attr("class", "axis")  //Assign "axis" class
+        .attr("transform", "translate(" + offset + "," + (20 + legendHeight) + ")")
+        .call(xAxis);    
       }
 
 
@@ -408,6 +473,8 @@
             .transition()
             .style('fill', getColor);
         }
+        
+        updateLegend();
       });
 
 
