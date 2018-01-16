@@ -57,6 +57,7 @@
       var height = 600;
       var timeInterval = [2007, 2014];
       var selectedTime = 0;
+      var selectedId = '#100';
       var currentDomain = [0,100];
 
       var projection = d3.geoMercator()
@@ -115,6 +116,8 @@
           .on('mouseover', handleMouseover)
           .on('mouseout', handleMouseout)
           .on('click', click);
+
+        drawLine();
       });
             
       var legendWidth = width * 0.6, legendHeight = 10;
@@ -185,10 +188,13 @@
         //d3.select(this).style('fill', 'black');
         $('#textR').empty();
         $('#textR').html(this.id + " " + this.getAttribute('title'));
-
-        var mouse = d3.mouse(this);
+        selectedId = this.id;
         
-        value = record.filter(row => row.NUMMER == this.id);
+        updateStickmen();
+        updateData();
+      }
+      function updateStickmen(){
+        value = record.filter(row => row.NUMMER == selectedId);
         if(selectedTime != 0) value = value.filter(row => row.JAHR == selectedTime);
         var array = new Array();
 
@@ -215,8 +221,6 @@
           'top': 560,
           'left': 20
         }).fadeIn('slow');
-
-        updateData();
       }
       function createStickmen(anteil, total) {
         var result = '';
@@ -279,44 +283,41 @@
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
+            "translate(" + margin.left + "," + margin.top + ")");
 
-        // get the data
-        d3.csv("data.csv", function(error, data) {
-          if (error) throw error;
+      function drawLine(){
+              // scale the range of the data
+      xScale.domain([2007, 2014]);
+      yScale.domain([0, 35]);
 
-          // scale the range of the data
-          xScale.domain([2007, 2014]);
-          yScale.domain([0, 35]);
 
-          // add the area
-          svg2.append("graph")
-            .data([data])
-            .attr("width", 300)
-            .attr("height", 300)
-            .attr("class", "area")
-            .attr("d", area);
+      // add the area
+      svg2.append("graph")
+        .data(record.filter(row => row.NUMMER == "#100"))
+        .attr("width", 300)
+        .attr("height", 300)
+        .attr("class", "area")
+        .attr("d", area);
 
-          // add the valueline path.
-          svg2.append("path")
-            .data([data])
-            .attr("class", "line")
-            .attr("d", valueline);
+      // add the valueline path.
+      svg2.append("path")
+        .data([record.filter(row => row.NUMMER == "#100")])
+        .attr("class", "line")
+        .attr("d", valueline);
 
-          // Add the X Axis
-          svg2.append("g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(0," + height + ")")
-            .call(d3.axisBottom(xScale).tickFormat(d3.format("d")))
-            //.selectAll("text")
-            .style("text-anchor", "end")
+      // Add the X Axis
+      svg2.append("g")
+        .attr("class", "x axis")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(xScale).tickFormat(d3.format("d")))
+        //.selectAll("text")
+        .style("text-anchor", "end")
 
-          // Add the Y Axis
-          svg2.append("g")
-            .attr("class", "y axis")
-            .call(d3.axisLeft(yScale));
-
-      });
+      // Add the Y Axis
+      svg2.append("g")
+        .attr("class", "y axis")
+        .call(d3.axisLeft(yScale));
+      }
 
       function updateData() {
 
@@ -443,8 +444,9 @@
       //for Time
       $("#sliderEle").on("change  ", function(event, ui) {
         $('#sliderText').text(this.value);
-        console.log(this.value);
         selectedTime = +this.value;
+        console.log(selectedId + 'during time ' + selectedTime);
+        updateStickmen();
         svg.selectAll("path")
           .transition()
           .style('fill', updateColor);
@@ -487,6 +489,7 @@
       $('#resetButton').click( function() {
         //todo
         console.log('Reset pressed');
+        updateData();
 
         $('#sliderText').text('Total');
         $('#test').empty();
@@ -494,6 +497,21 @@
         svg.selectAll("path")
           .transition()
           .style('fill', getColor);
+
+        tmpRecord = record.filter(row => row.NUMMER == '#100');
+        // Select the section we want to apply our changes to
+        var tmpsvg = d3.select("#graphright").transition();
+
+        // Make the changes
+        tmpsvg.select(".line") // change the line
+          .duration(750)
+          .attr("d", valuesline(tmpRecord));
+        tmpsvg.select(".x.axis") // change the x axis
+          .duration(750)
+          .call(d3.axisBottom(xScale).tickFormat(d3.format("d")));
+        tmpsvg.select(".y.axis") // change the y axis
+          .duration(750)
+          .call(d3.axisLeft(yScale)); 
       });
 
 
