@@ -17,23 +17,24 @@
   <div id="test"> </div>
   <div id="wrapper">
     <div id="empty">
-        <b id="sliderText"> Total </b>
-        <input type="range" min="2007" max="2014" value="-1" class="slider" id="sliderEle">
-        <div id="left">
-            <input type="checkbox" checked="yes" id="checkbox"> Lie Factor
-            <input name="updateButton" type="button" value="Reset All" id="resetButton" />
-        </div>
-        <form>
-            <fieldset id='legendContainer'>
-              <legend>Legend</legend>
+      <b id="sliderText"> Total </b>
+      <input type="range" min="2007" max="2014" value="-1" class="slider" id="sliderEle">
+      <div id="left">
+        <input type="checkbox" checked="yes" id="checkbox"> Lie Factor
+        <input name="updateButton" type="button" value="Reset All" id="resetButton" />
+      </div>
+      <form>
+        <fieldset id='legendContainer'>
+          <legend>Legend</legend>
 
-            </fieldset>
-          </form>
+        </fieldset>
+      </form>
     </div>
     <div id="map"> </div>
   </div>
   <div id="sideRight">
-    <div id="textright"> <b id="textR"> All Time Development</b>
+    <div id="textright">
+      <b id="textR"> All Time Development</b>
       <div id="detailed">
 
       </div>
@@ -44,10 +45,8 @@
   </div>
 
   <script type="text/javascript">
-    $(document).ready(function() {
-
-      //Grundschuldaten
-
+    $(document).ready(function () {
+      
       //Initializing needed data
       var color = d3.scaleLinear().range(["yellow", "red"]);
       var showValue = "INDIKATOR_WERT";
@@ -57,7 +56,7 @@
       var timeInterval = [2007, 2014];
       var selectedTime = 0;
       var selectedId = '#100';
-      var currentDomain = [0,100];
+      var currentDomain = [0, 100];
 
       var projection = d3.geoMercator()
         .scale(110000)
@@ -71,13 +70,13 @@
         .append("g");
 
       //Prepare datastructures
-      d3.csv("data/preprocessing/primaryschool_ds.csv", addRecord, function(error, data) {
+      d3.csv("data/preprocessing/primaryschool_ds.csv", addRecord, function (error, data) {
         // sets colordomain for the given range
-        color.domain(d3.extent(data, function(d) {
+        color.domain(d3.extent(data, function (d) {
           return d[showValue];
         }));
 
-        currentDomain=d3.extent(data, function(d) {
+        currentDomain = d3.extent(data, function (d) {
           return d[showValue];
         });
 
@@ -91,44 +90,44 @@
         return d;
       }
 
-      
+
       var legendWidth = width * 0.6, legendHeight = 10;
       var offset = 10;
 
       var legend = d3.select('#legendContainer').append('svg')
-        .attr("width", legendWidth+2*offset)
+        .attr("width", legendWidth + 2 * offset)
         .attr("height", 50)
         .attr('id', 'legendscale')
-	      .attr("class", "legendWrapper");
+        .attr("class", "legendWrapper");
 
       var defs = legend.append("defs");
 
       //Append a linearGradient element to the defs and give it a unique id
       var linearGradient = defs.append("linearGradient")
-          .attr("id", "linear-gradient");
+        .attr("id", "linear-gradient");
 
       //Horizontal gradient
       linearGradient
-          .attr("x1", "0%")
-          .attr("y1", "0%")
-          .attr("x2", "100%")
-          .attr("y2", "0%");
+        .attr("x1", "0%")
+        .attr("y1", "0%")
+        .attr("x2", "100%")
+        .attr("y2", "0%");
 
       //Draw map + bind events
-      d3.json("mucbezirke.geojson", function(error, mapData) {
+      d3.json("mucbezirke.geojson", function (error, mapData) {
         var features = mapData.features;
 
         svg.selectAll("path")
           .data(features).enter()
           .append("path")
           .attr("class", "district")
-          .attr("data-name", function(munich_district) {
+          .attr("data-name", function (munich_district) {
             return munich_district.properties.name;
           })
-          .attr("id", function(munich_district) {
+          .attr("id", function (munich_district) {
             return munich_district.properties.nr;
           })
-          .attr("title", function(munich_district) {
+          .attr("title", function (munich_district) {
             return munich_district.properties.name;
           })
           .attr("d", path)
@@ -145,7 +144,7 @@
 
 
       //Bind tooltip to map
-      var tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
+      var tip = d3.tip().attr('class', 'd3-tip').html(function (d) {
         //console.log(d.properties.name);
         return d.properties.name;
       });
@@ -153,14 +152,14 @@
 
       //Helper functions
       function handleMouseover(d) {
-        d3.select(this).style("fill", function() {
+        d3.select(this).style("fill", function () {
           return d3.rgb(d3.select(this).style("fill")).darker(1);
         });
         tip.show(d);
       };
 
       function handleMouseout(d) {
-        d3.select(this).style("fill", function() {
+        d3.select(this).style("fill", function () {
           return d3.rgb(d3.select(this).style("fill")).darker(-1);
         });
         tip.hide(d);
@@ -172,7 +171,7 @@
         // Filter the correct id
         value = record.filter(row => row.NUMMER == this.id);
         // Get the mean-value of all years
-        value = d3.mean(value, function(d) {
+        value = d3.mean(value, function (d) {
           //console.log(d.INDIKATOR_WERT);
           return d.INDIKATOR_WERT
         });
@@ -193,19 +192,19 @@
         updateStickmen();
         updateData();
       }
-      function updateStickmen(){
+      function updateStickmen() {
         value = record.filter(row => row.NUMMER == selectedId);
         value = value.filter(row => row.JAHR == selectedTime);
         var array = new Array();
 
-        valueAnteil = d3.mean(value, function(d) {
+        valueAnteil = d3.mean(value, function (d) {
           return d.BASISWERT_1
         });
-        valueTotal = d3.mean(value, function(d) {
+        valueTotal = d3.mean(value, function (d) {
           return d.BASISWERT_2
         });
 
-        value = d3.mean(value, function(d) {
+        value = d3.mean(value, function (d) {
           return d.INDIKATOR_WERT
         });
 
@@ -213,8 +212,8 @@
 
         $('#test').empty();
         $('#test').append(createStickmen(valueAnteil, valueTotal)
-        + valueAnteil + " von " + valueTotal + " Schuelern sind nicht-deutsch | "
-        + value.toFixed(2)+ "% Anteil nicht-deutscher Grundschueler"
+          + valueAnteil + " von " + valueTotal + " Schuelern sind nicht-deutsch | "
+          + value.toFixed(2) + "% Anteil nicht-deutscher Grundschueler"
         )
 
         $('#test').css({
@@ -225,18 +224,18 @@
       function createStickmen(anteil, total) {
         var result = '';
         var repeat = 0;
-        var repeat2= 0;
+        var repeat2 = 0;
         repeat = Math.round(anteil / 100);
         repeat2 = Math.round(total / 100);
 
-        for(var i=0; i<repeat; i++) {
+        for (var i = 0; i < repeat; i++) {
           result += "<img height='20' width='10' id='stick' src='stick1.png'/> ";
         }
         // for(var i=0; i<Math.round((anteil % 100)/50); i++) {
         //     result += "<img height='20' width='10' id='stick' src='stick50.png'/> ";
         // }
 
-        for(var z=0; z<repeat2-repeat; z++) {
+        for (var z = 0; z < repeat2 - repeat; z++) {
           result += "<img height='20' width='10' id='stick' src='stick1_white.png'/> ";
         }
 
@@ -245,11 +244,11 @@
       //>>>>>>>> SVG 2
       // set the dimensions and margins of the graph
       var margin = {
-          top: 20,
-          right: 20,
-          bottom: 30,
-          left: 50
-        },
+        top: 20,
+        right: 20,
+        bottom: 30,
+        left: 50
+      },
         width = 540 - margin.left - margin.right,
         height = 400 - margin.top - margin.bottom;
       // set the ranges
@@ -258,19 +257,19 @@
 
       // define the area
       var area = d3.area()
-        .x(function(d) {
+        .x(function (d) {
           return xScale(d.JAHR.toString());
         })
-        .y(function(d) {
+        .y(function (d) {
           return yScale(d.INDIKATOR_WERT);
         });
 
       // define the line
       var valueline = d3.line()
-        .x(function(d) {
+        .x(function (d) {
           return xScale(d.JAHR.toString());
         })
-        .y(function(d) {
+        .y(function (d) {
           return yScale(d.INDIKATOR_WERT);
         });
 
@@ -283,40 +282,40 @@
         .attr("height", height + margin.top + margin.bottom)
         .append("g")
         .attr("transform",
-            "translate(" + margin.left + "," + margin.top + ")");
+        "translate(" + margin.left + "," + margin.top + ")");
 
-      function drawLine(){
-              // scale the range of the data
-      xScale.domain([2007, 2014]);
-      yScale.domain([0, 35]);
+      function drawLine() {
+        // scale the range of the data
+        xScale.domain([2007, 2014]);
+        yScale.domain([0, 35]);
 
 
-      // add the area
-      svg2.append("graph")
-        .data(record.filter(row => row.NUMMER == "#100"))
-        .attr("width", 300)
-        .attr("height", 300)
-        .attr("class", "area")
-        .attr("d", area);
+        // add the area
+        svg2.append("graph")
+          .data(record.filter(row => row.NUMMER == "#100"))
+          .attr("width", 300)
+          .attr("height", 300)
+          .attr("class", "area")
+          .attr("d", area);
 
-      // add the valueline path.
-      svg2.append("path")
-        .data([record.filter(row => row.NUMMER == "#100")])
-        .attr("class", "line")
-        .attr("d", valueline);
+        // add the valueline path.
+        svg2.append("path")
+          .data([record.filter(row => row.NUMMER == "#100")])
+          .attr("class", "line")
+          .attr("d", valueline);
 
-      // Add the X Axis
-      svg2.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(d3.axisBottom(xScale).tickFormat(d3.format("d")))
-        //.selectAll("text")
-        .style("text-anchor", "end")
+        // Add the X Axis
+        svg2.append("g")
+          .attr("class", "x axis")
+          .attr("transform", "translate(0," + height + ")")
+          .call(d3.axisBottom(xScale).tickFormat(d3.format("d")))
+          //.selectAll("text")
+          .style("text-anchor", "end")
 
-      // Add the Y Axis
-      svg2.append("g")
-        .attr("class", "y axis")
-        .call(d3.axisLeft(yScale));
+        // Add the Y Axis
+        svg2.append("g")
+          .attr("class", "y axis")
+          .call(d3.axisLeft(yScale));
       }
 
       function updateData() {
@@ -328,10 +327,10 @@
 
         // Get the data again
         valuesline = d3.line()
-          .x(function(d) {
+          .x(function (d) {
             return xScale(d.JAHR.toString());
           })
-          .y(function(d) {
+          .y(function (d) {
             return yScale(d.INDIKATOR_WERT);
           });
 
@@ -357,11 +356,11 @@
       //TODO
       function resetGraph() {
 
-          valuesline = d3.line()
-          .x(function(d) {
+        valuesline = d3.line()
+          .x(function (d) {
             return xScale(d.JAHR.toString());
           })
-          .y(function(d) {
+          .y(function (d) {
             return yScale(d.INDIKATOR_WERT);
           });
 
@@ -384,53 +383,53 @@
           .call(d3.axisLeft(yScale));
       }
 
-      function initLegend(){
-      //Append multiple color stops by using D3's data/enter step
-      linearGradient.selectAll("stop")
-          .data( color.range() )
+      function initLegend() {
+        //Append multiple color stops by using D3's data/enter step
+        linearGradient.selectAll("stop")
+          .data(color.range())
           .enter().append("stop")
-          .attr("offset", function(d,i) { return i/(color.range().length-1); })
-          .attr("stop-color", function(d) { return d; });
+          .attr("offset", function (d, i) { return i / (color.range().length - 1); })
+          .attr("stop-color", function (d) { return d; });
 
-      //Draw the rectangle and fill with gradient
-      legend.append("rect")
-        .attr('class', 'legendRect')
-        .attr('x', offset)
-        .attr("y", 20)
-        .attr("width", legendWidth)
-        .attr("height", legendHeight)
-        .style("fill", "url(#linear-gradient)");
+        //Draw the rectangle and fill with gradient
+        legend.append("rect")
+          .attr('class', 'legendRect')
+          .attr('x', offset)
+          .attr("y", 20)
+          .attr("width", legendWidth)
+          .attr("height", legendHeight)
+          .style("fill", "url(#linear-gradient)");
 
-      //Set scale for x-axis
-      var legendXScale = d3.scaleLinear()
-        .range([0, legendWidth])
-        .domain(currentDomain);
+        //Set scale for x-axis
+        var legendXScale = d3.scaleLinear()
+          .range([0, legendWidth])
+          .domain(currentDomain);
         //.domain([d3.min(pt.legendSOM.colorData)/100, d3.max(pt.legendSOM.colorData)/100]);
 
-      //Define x-axis
-      var xAxis = d3.axisBottom(legendXScale)
+        //Define x-axis
+        var xAxis = d3.axisBottom(legendXScale)
           .ticks();
 
-      //Append title
-      legend.append("text")
-        .attr("class", "legendTitle")
-        .attr('x', offset)
-        .attr("y", 15)
-        .text("Prozent der Nicht-deutschen Grundschueler");
+        //Append title
+        legend.append("text")
+          .attr("class", "legendTitle")
+          .attr('x', offset)
+          .attr("y", 15)
+          .text("Prozent der Nicht-deutschen Grundschueler");
 
-      //Set up X axis
-      legend.append("g")
-        .attr("class", "legendaxis")  //Assign "axis" class
-        .attr("transform", "translate(" + offset + "," + (20 + legendHeight) + ")")
-        .call(xAxis);
+        //Set up X axis
+        legend.append("g")
+          .attr("class", "legendaxis")  //Assign "axis" class
+          .attr("transform", "translate(" + offset + "," + (20 + legendHeight) + ")")
+          .call(xAxis);
       }
 
-      function updateLegend(){
+      function updateLegend() {
         console.log(legend.select('.legendaxis'));
         //Append multiple color stops by using D3's data/enter step
         linearGradient.selectAll("stop")
-            .attr("offset", function(d,i) { return i/(color.range().length-1); })
-            .attr("stop-color", function(d) { return d; });
+          .attr("offset", function (d, i) { return i / (color.range().length - 1); })
+          .attr("stop-color", function (d) { return d; });
 
         legend.select('.legendRect')
           .style("fill", "url(#linear-gradient)");
@@ -442,7 +441,7 @@
 
         //Define x-axis
         var xAxis = d3.axisBottom(legendXScale)
-            .ticks();
+          .ticks();
 
         legend.select('.legendaxis')
           .transition()
@@ -451,14 +450,14 @@
       }
 
 
-      function updateColor(){
+      function updateColor() {
         var value = -1;
 
         // Filter the correct id
         value = record.filter(row => row.NUMMER == this.id);
         value = value.filter(row => row.JAHR == selectedTime);
         // Get the mean-value of all years
-        value = d3.mean(value, function(d) {
+        value = d3.mean(value, function (d) {
           return d.INDIKATOR_WERT
         });
         if (value == -1) {
@@ -468,7 +467,7 @@
       }
 
       //for Time
-      $("#sliderEle").on("change  ", function(event, ui) {
+      $("#sliderEle").on("change  ", function (event, ui) {
         $('#sliderText').text(this.value);
         selectedTime = +this.value;
         console.log(selectedId + 'during time ' + selectedTime);
@@ -480,19 +479,19 @@
       });
 
 
-      $('#checkbox').change(function() {
-      // this will contain a reference to the checkbox
+      $('#checkbox').change(function () {
+        // this will contain a reference to the checkbox
         if (this.checked) {
           // the checkbox is now checked Sorry long i failed.
-          color.domain(d3.extent(record, function(d) {
+          color.domain(d3.extent(record, function (d) {
             return d[showValue];
           }));
         } else {
           // the checkbox is now no longer checked
-          color.domain([0,100]);
+          color.domain([0, 100]);
         }
 
-        if(selectedTime != 0) {
+        if (selectedTime != 0) {
           svg.selectAll("path")
             .transition()
             .style('fill', updateColor);
@@ -512,14 +511,14 @@
         return d && d.properties ? d.properties.NOMBRE_DPT : null;
       }
 
-      $('#resetButton').click( function() {
+      $('#resetButton').click(function () {
         //todo
         console.log('Reset pressed');
         $("#textR").html('<b>All Time Development</b>');
         $('#sliderText').text('Total');
         $('#test').empty();
         selectedTime = 0;
-        selectedId ='#100';
+        selectedId = '#100';
         updateData();
         svg.selectAll("path")
           .transition()
