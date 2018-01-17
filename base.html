@@ -26,7 +26,7 @@
         <form>
             <fieldset id='legendContainer'>
               <legend>Legend</legend>
-              
+
             </fieldset>
           </form>
     </div>
@@ -69,7 +69,7 @@
         .attr("width", width)
         .attr("height", height)
         .append("g");
-      
+
       //Prepare datastructures
       d3.csv("data/preprocessing/primaryschool_ds.csv", addRecord, function(error, data) {
         // sets colordomain for the given range
@@ -118,16 +118,16 @@
 
         drawLine();
       });
-            
+
       var legendWidth = width * 0.6, legendHeight = 10;
       var offset = 10;
-      
+
       var legend = d3.select('#legendContainer').append('svg')
         .attr("width", legendWidth+2*offset)
         .attr("height", 50)
         .attr('id', 'legendscale')
 	      .attr("class", "legendWrapper");
-                
+
       var defs = legend.append("defs");
 
       //Append a linearGradient element to the defs and give it a unique id
@@ -141,7 +141,7 @@
           .attr("x2", "100%")
           .attr("y2", "0%");
 
-      updateLegend();
+      initLegend();
 
       //Bind tooltip to map
       var tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
@@ -188,7 +188,7 @@
         $('#textR').empty();
         $('#textR').html(this.id + " " + this.getAttribute('title'));
         selectedId = this.id;
-        
+
         updateStickmen();
         updateData();
       }
@@ -208,13 +208,13 @@
           return d.INDIKATOR_WERT
         });
 
-        
+
 
         $('#test').empty();
         $('#test').append(createStickmen(valueAnteil, valueTotal)
         + valueAnteil + " von " + valueTotal + " Schuelern sind nicht-deutsch | "
         + value.toFixed(2)+ "% Anteil nicht-deutscher Grundschueler"
-        ) 
+        )
 
         $('#test').css({
           'top': 590,
@@ -355,7 +355,7 @@
 
       //TODO
       function resetGraph() {
-  
+
           valuesline = d3.line()
           .x(function(d) {
             return xScale(d.JAHR.toString());
@@ -380,19 +380,20 @@
           .call(d3.axisBottom(xScale).tickFormat(d3.format("d")));
         svg2.select(".y.axis") // change the y axis
           .duration(750)
-          .call(d3.axisLeft(yScale));    
+          .call(d3.axisLeft(yScale));
       }
 
-      function updateLegend(){
+      function initLegend(){
       //Append multiple color stops by using D3's data/enter step
-      linearGradient.selectAll("stop") 
-          .data( color.range() )                  
+      linearGradient.selectAll("stop")
+          .data( color.range() )
           .enter().append("stop")
           .attr("offset", function(d,i) { return i/(color.range().length-1); })
           .attr("stop-color", function(d) { return d; });
 
       //Draw the rectangle and fill with gradient
       legend.append("rect")
+        .attr('class', 'legendRect')
         .attr('x', offset)
         .attr("y", 20)
         .attr("width", legendWidth)
@@ -418,9 +419,34 @@
 
       //Set up X axis
       legend.append("g")
-        .attr("class", "axis")  //Assign "axis" class
+        .attr("class", "legendaxis")  //Assign "axis" class
         .attr("transform", "translate(" + offset + "," + (20 + legendHeight) + ")")
-        .call(xAxis);    
+        .call(xAxis);
+      }
+
+      function updateLegend(){
+        console.log(legend.select('.legendaxis'));
+        //Append multiple color stops by using D3's data/enter step
+        linearGradient.selectAll("stop")
+            .attr("offset", function(d,i) { return i/(color.range().length-1); })
+            .attr("stop-color", function(d) { return d; });
+
+        legend.select('.legendRect')
+          .style("fill", "url(#linear-gradient)");
+
+        //Set scale for x-axis
+        var legendXScale = d3.scaleLinear()
+          .range([0, legendWidth])
+          .domain(currentDomain);
+
+        //Define x-axis
+        var xAxis = d3.axisBottom(legendXScale)
+            .ticks();
+
+        legend.select('.legendaxis')
+          .transition()
+          .call(xAxis)
+
       }
 
 
@@ -474,7 +500,7 @@
             .transition()
             .style('fill', getColor);
         }
-        
+        currentDomain = color.domain();
         updateLegend();
       });
 
@@ -489,7 +515,7 @@
         //todo
         console.log('Reset pressed');
         updateData();
-        $("#textR").html('<b>All Time Development</b>'); 
+        $("#textR").html('<b>All Time Development</b>');
         $('#sliderText').text('Total');
         $('#test').empty();
         selectedTime = 0;
@@ -510,7 +536,7 @@
           .call(d3.axisBottom(xScale).tickFormat(d3.format("d")));
         tmpsvg.select(".y.axis") // change the y axis
           .duration(750)
-          .call(d3.axisLeft(yScale)); 
+          .call(d3.axisLeft(yScale));
       });
 
 
