@@ -91,6 +91,29 @@
         return d;
       }
 
+      
+      var legendWidth = width * 0.6, legendHeight = 10;
+      var offset = 10;
+
+      var legend = d3.select('#legendContainer').append('svg')
+        .attr("width", legendWidth+2*offset)
+        .attr("height", 50)
+        .attr('id', 'legendscale')
+	      .attr("class", "legendWrapper");
+
+      var defs = legend.append("defs");
+
+      //Append a linearGradient element to the defs and give it a unique id
+      var linearGradient = defs.append("linearGradient")
+          .attr("id", "linear-gradient");
+
+      //Horizontal gradient
+      linearGradient
+          .attr("x1", "0%")
+          .attr("y1", "0%")
+          .attr("x2", "100%")
+          .attr("y2", "0%");
+
       //Draw map + bind events
       d3.json("mucbezirke.geojson", function(error, mapData) {
         var features = mapData.features;
@@ -117,31 +140,9 @@
           .on('click', click);
 
         drawLine();
+        initLegend();
       });
 
-      var legendWidth = width * 0.6, legendHeight = 10;
-      var offset = 10;
-
-      var legend = d3.select('#legendContainer').append('svg')
-        .attr("width", legendWidth+2*offset)
-        .attr("height", 50)
-        .attr('id', 'legendscale')
-	      .attr("class", "legendWrapper");
-
-      var defs = legend.append("defs");
-
-      //Append a linearGradient element to the defs and give it a unique id
-      var linearGradient = defs.append("linearGradient")
-          .attr("id", "linear-gradient");
-
-      //Horizontal gradient
-      linearGradient
-          .attr("x1", "0%")
-          .attr("y1", "0%")
-          .attr("x2", "100%")
-          .attr("y2", "0%");
-
-      initLegend();
 
       //Bind tooltip to map
       var tip = d3.tip().attr('class', 'd3-tip').html(function(d) {
