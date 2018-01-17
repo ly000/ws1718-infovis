@@ -194,7 +194,7 @@
       }
       function updateStickmen(){
         value = record.filter(row => row.NUMMER == selectedId);
-        if(selectedTime != 0) value = value.filter(row => row.JAHR == selectedTime);
+        value = value.filter(row => row.JAHR == selectedTime);
         var array = new Array();
 
         valueAnteil = d3.mean(value, function(d) {
@@ -514,11 +514,12 @@
       $('#resetButton').click( function() {
         //todo
         console.log('Reset pressed');
-        updateData();
         $("#textR").html('<b>All Time Development</b>');
         $('#sliderText').text('Total');
         $('#test').empty();
         selectedTime = 0;
+        selectedId ='#100';
+        updateData();
         svg.selectAll("path")
           .transition()
           .style('fill', getColor);
